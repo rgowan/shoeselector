@@ -1,7 +1,31 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'httparty'
+
+popshops_url = 'http://api.popshops.com/v3/products.json'
+catalog_key  = ENV['POPSHOPS_CATALOG_KEY']
+api_key      = ENV['POPSHOPS_API_KEY']
+
+response = HTTParty.get(popshops_url, query: {
+  # Required
+  catalog: catalog_key,
+  account: api_key,
+
+  # Optional
+  results_per_page: 100,
+  keywords: "shoes",
+  category_id: 25245
+  })
+
+products = response['results']['products']['product'].each do |product|
+  product['offers']['offer'].each do |offer|
+
+    options = {
+      name: offer['name'],
+      image_url_large: offer['image_url_large'],
+      description: offer['description'],
+      price_retail: offer['price_retail'],
+      url: offer['url']
+    }
+
+    Product.create!(options)
+  end
+end
