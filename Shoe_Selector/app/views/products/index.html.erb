@@ -18,10 +18,10 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= product.image_url_large %></td>
+        <td><%= image_tag(product.image_url_large) %></td>
         <td><%= product.description %></td>
         <td><%= product.url %></td>
-        <td><%= product.price_retail %></td>
+        <td>£<%= product.price_retail %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
         <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>

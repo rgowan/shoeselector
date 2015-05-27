@@ -11,8 +11,6 @@ response = HTTParty.get(popshops_url, query: {
 
   # Optional
   results_per_page: 100,
-  keywords: "shoes",
-  category_id: 25245
   })
 
 products = response['results']['products']['product'].each do |product|
