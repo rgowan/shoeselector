@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
+  before_action :redirect_if_not_xhr
+
+  private
+    def redirect_if_not_xhr 
+      redirect_to root_path if (!request.xhr? && request.env['PATH_INFO'] != root_path)
+    end
+
   protected
 
   def configure_permitted_parameters

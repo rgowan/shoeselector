@@ -7,7 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
   <div class='login'>
     <% if current_user %>
       <%= current_user.email %>
@@ -17,9 +16,8 @@
       <%= link_to "Sign In", new_user_session_path %>
       <%= link_to "Register", new_user_registration_path %>
     <% end %>
-  </div>
+  </div> 
 
-  <%= yield %>
-  
+  <h1>Sole Selector</h1> 
 </body>
 </html>
