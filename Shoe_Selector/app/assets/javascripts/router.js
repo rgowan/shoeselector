@@ -4,8 +4,9 @@ define([
   'backbone',
   'views/application',
   'views/products/index',
-  'views/wishes/index'
-  ], function($, _, Backbone, ApplicationView, ProductsIndexView, WishesIndexView){
+  'views/wishes/index',
+  'views/homepage/index'
+  ], function($, _, Backbone, ApplicationView, ProductsIndexView, WishesIndexView, HomepageIndexView){
 
     var layout = function(){
       new ApplicationView().render();
@@ -25,7 +26,7 @@ define([
       layout();
 
       router.on('route:home', function(){
-
+        new HomepageIndexView().render();
       });
 
       router.on('route:productsIndex', function(){
