@@ -3,8 +3,9 @@ define([
   'underscore',
   'backbone',
   'views/application',
-  'views/products/index'
-  ], function($, _, Backbone, ApplicationView, ProductsIndexView){
+  'views/products/index',
+  'views/wishes/index'
+  ], function($, _, Backbone, ApplicationView, ProductsIndexView, WishesIndexView){
 
     var layout = function(){
       new ApplicationView().render();
@@ -32,7 +33,7 @@ define([
       });
 
       router.on('route:wishesIndex', function(){
-        
+        new WishesIndexView();
       });
 
       router.on('route:defaultAction', function(actions) {
