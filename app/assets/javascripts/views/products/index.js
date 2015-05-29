@@ -11,15 +11,13 @@ define([
       initialize: function(){
         var self = this;
         var collection = new ProductsCollection();
-        var data = collection.fetch({
-          success: function(data){
-            self.render(data)
-          }
-        });
+        collection.getPage(1).done(function(data){
+          self.render(data)
+        })
       },
       render: function(data){
         var template = _.template(ProductsTemplate);
-        this.$el.html(template({products: data.models}));
+        this.$el.html(template({products: data}));
       }
     });
 

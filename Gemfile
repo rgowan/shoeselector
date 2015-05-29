@@ -5,6 +5,7 @@ ruby "2.2.1"
 gem 'rmagick', '2.15.0'
 gem 'httparty', '0.13.5'
 gem 'devise', '3.4.1'
+gem 'kaminari', '0.16.3'
 
 gem 'rails', '4.2.1'
 gem 'pg', '0.18.2'
@@ -24,6 +25,6 @@ group :development, :test do
 end
 
 group :production do
-  gem "rails_12_factor"
+  gem "rails_12factor"
 end
 

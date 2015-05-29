@@ -2,11 +2,12 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  'paginator',
   'views/application',
   'views/products/index',
   'views/wishes/index',
   'views/homepage/index'
-  ], function($, _, Backbone, ApplicationView, ProductsIndexView, WishesIndexView, HomepageIndexView){
+  ], function($, _, Backbone, PageableCollection, ApplicationView, ProductsIndexView, WishesIndexView, HomepageIndexView){
 
     var layout = function(){
       new ApplicationView().render();
