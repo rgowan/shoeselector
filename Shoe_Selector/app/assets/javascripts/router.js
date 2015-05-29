@@ -2,7 +2,11 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  ], function($, _, Backbone){
+  ], function($, _, Backbone, ApplicationView){
+
+    var layout = function(){
+      new ApplicationView().render();
+    }
 
     var Router = Backbone.Router.extend({
       routes: {
@@ -14,6 +18,7 @@ define([
 
     var initialize = function(){
       var router = new Router;
+      layout();
 
       router.on('route:home', function(){
         console.log("Home");
