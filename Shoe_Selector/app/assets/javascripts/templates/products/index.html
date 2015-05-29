@@ -1,26 +1,4 @@
-<h1>Listing Products</h1>
-
-<table id="products-table">
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Image</th>
-    <th>Description</th>
-    <th>Url</th>
-    <th>Retail Price</th>
-  </tr>
-
-  <tbody>
-    <% _.each(products, function(product){ %>
-      <tr>
-        <td><%= product.get("id") %> 
-        <td><%= product.get("name") %></td>
-        <td><img src="<%= product.get("image_url_large") %>" width="400"></td>
-        <td><%= product.get("description") %></td>
-        <td><%= product.get("url") %></td>
-        <td>£<%= product.get("price_retail") %></td>
-      </tr>
-    <% }); %>
-  </tbody>
-
-</table>
+<h1>Shoes</h1>
+<% _.each(products, function(product){ %>
+    <li><img src="<%= product.get("image_url_large") %>" width="390"></li>
+<% }); %>

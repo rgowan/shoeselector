@@ -14,6 +14,7 @@ define([
       routes: {
         ''         : 'home',
         'products' : 'productsIndex',
+        'wishes'   : 'wishesIndex',
         '*actions' : 'defaultAction'
       }
     });
@@ -27,8 +28,11 @@ define([
       });
 
       router.on('route:productsIndex', function(){
-
         new ProductsIndexView();
+      });
+
+      router.on('route:wishesIndex', function(){
+        
       });
 
       router.on('route:defaultAction', function(actions) {
