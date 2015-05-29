@@ -6,3 +6,9 @@ require.config({
     text: 'lib/text'
   }
 });
+
+require([
+  'app',
+], function(App){
+  App.initialize();
+});
