@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.2.1"
 
 gem 'rmagick', '2.15.0'
 gem 'httparty', '0.13.5'
@@ -20,5 +21,9 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :production do
+  gem "rails_12_factor"
 end
 
