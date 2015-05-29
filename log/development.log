@@ -33799,3 +33799,521 @@ Processing by ProductsController#index as JSON
   [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 8
   Rendered products/index.json.jbuilder (1.4ms)
 Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 17:01:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticsController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 282ms (Views: 239.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/app.js" for ::1 at 2015-05-29 17:01:54 +0100
+
+
+Started GET "/assets/lib/underscore.js" for ::1 at 2015-05-29 17:01:54 +0100
+
+
+Started GET "/assets/lib/jquery.js" for ::1 at 2015-05-29 17:01:54 +0100
+
+
+Started GET "/assets/router.js" for ::1 at 2015-05-29 17:01:54 +0100
+
+
+Started GET "/assets/lib/backbone.js" for ::1 at 2015-05-29 17:01:54 +0100
+
+
+Started GET "/assets/lib/backbone.paginator.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/views/application.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/views/products/index.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/views/wishes/index.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/views/homepage/index.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/lib/text.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/collections/products.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/collections/wishes.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/templates/application.html" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/templates/homepage/index.html" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/templates/products/index.html" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/templates/wishes/index.html" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/models/product.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/assets/models/wish.js" for ::1 at 2015-05-29 17:01:55 +0100
+
+
+Started GET "/products.json?page=1&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:01:59 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"1", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (1.3ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 0
+  Rendered products/index.json.jbuilder (86.3ms)
+Completed 200 OK in 103ms (Views: 93.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/products.json?page=1&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:00 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"1", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 0[0m
+  Rendered products/index.json.jbuilder (1.6ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=2&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:01 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"2", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 1
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=3&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:02 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"3", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 2[0m
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=4&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:03 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"4", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.8ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 3
+  Rendered products/index.json.jbuilder (2.7ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/products.json?page=5&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:03 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"5", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 4[0m
+  Rendered products/index.json.jbuilder (2.2ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=6&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:04 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"6", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 5
+  Rendered products/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=7&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:04 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"7", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 6[0m
+  Rendered products/index.json.jbuilder (2.2ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=8&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:05 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"8", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 7
+  Rendered products/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=9&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:06 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"9", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 8[0m
+  Rendered products/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=10&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:07 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"10", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 9
+  Rendered products/index.json.jbuilder (1.9ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=11&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:07 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"11", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 10[0m
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=12&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:09 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"12", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 11
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=13&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:12 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"13", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 12[0m
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=14&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:13 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"14", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 13
+  Rendered products/index.json.jbuilder (2.1ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-05-29 17:02:14 +0100
+Processing by StaticsController#index as HTML
+  Rendered text template within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/wishes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/lib/require.self-c9fd6919ecf6671a7f2d5a504ef01f6bf4a9db0fc8ea1a656a53382a397a2b0a.js?body=1" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/scaffolds.self-25cd8c3d68dc2fc4336fe4814791ad40208e6a7a1b0df611dde17ed59faf99bd.css?body=1" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/app.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/lib/underscore.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/lib/jquery.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/lib/backbone.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/router.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/lib/backbone.paginator.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/views/homepage/index.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/views/wishes/index.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/views/application.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/views/products/index.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/collections/wishes.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/lib/text.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/collections/products.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/models/wish.js" for ::1 at 2015-05-29 17:02:14 +0100
+
+
+Started GET "/assets/templates/homepage/index.html" for ::1 at 2015-05-29 17:02:15 +0100
+
+
+Started GET "/assets/templates/wishes/index.html" for ::1 at 2015-05-29 17:02:15 +0100
+
+
+Started GET "/assets/templates/products/index.html" for ::1 at 2015-05-29 17:02:15 +0100
+
+
+Started GET "/assets/templates/application.html" for ::1 at 2015-05-29 17:02:15 +0100
+
+
+Started GET "/assets/models/product.js" for ::1 at 2015-05-29 17:02:15 +0100
+
+
+Started GET "/products.json?page=1&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:15 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"1", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 0[0m
+  Rendered products/index.json.jbuilder (2.5ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=1&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:17 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"1", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 0
+  Rendered products/index.json.jbuilder (2.3ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=2&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:17 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"2", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 1[0m
+  Rendered products/index.json.jbuilder (2.2ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=3&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:17 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"3", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 2
+  Rendered products/index.json.jbuilder (1.8ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=4&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:19 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"4", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 3[0m
+  Rendered products/index.json.jbuilder (1.9ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=5&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:19 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"5", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 4
+  Rendered products/index.json.jbuilder (1.6ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=6&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:20 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"6", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 5[0m
+  Rendered products/index.json.jbuilder (2.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=7&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:21 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"7", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (1.0ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 6
+  Rendered products/index.json.jbuilder (2.1ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products.json?page=8&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:21 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"8", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 7[0m
+  Rendered products/index.json.jbuilder (1.6ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=9&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:22 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"9", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 8
+  Rendered products/index.json.jbuilder (1.7ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=10&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:22 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"10", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 9[0m
+  Rendered products/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=11&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:23 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"11", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 10
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=12&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:23 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"12", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 11[0m
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=13&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:24 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"13", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 12
+  Rendered products/index.json.jbuilder (2.0ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=14&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:25 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"14", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 13[0m
+  Rendered products/index.json.jbuilder (2.2ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=15&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:02:26 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"15", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 14
+  Rendered products/index.json.jbuilder (1.8ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=16&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:00 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"16", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 15[0m
+  Rendered products/index.json.jbuilder (2.7ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=17&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:01 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"17", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 16
+  Rendered products/index.json.jbuilder (1.9ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=18&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:02 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"18", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 17[0m
+  Rendered products/index.json.jbuilder (1.7ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=19&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:03 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"19", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 18
+  Rendered products/index.json.jbuilder (1.8ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=20&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:03 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"20", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 19[0m
+  Rendered products/index.json.jbuilder (2.2ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products.json?page=21&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:04 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"21", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 20
+  Rendered products/index.json.jbuilder (1.7ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=22&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:05 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"22", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 21[0m
+  Rendered products/index.json.jbuilder (1.8ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=23&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:06 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"23", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 22
+  Rendered products/index.json.jbuilder (1.6ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=24&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:06 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"24", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 23[0m
+  Rendered products/index.json.jbuilder (2.3ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=25&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:07 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"25", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 24
+  Rendered products/index.json.jbuilder (2.4ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=26&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:08 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"26", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 25[0m
+  Rendered products/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/products.json?page=27&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:09 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"27", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 26
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=28&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:10 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"28", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 27[0m
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=29&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:11 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"29", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 28
+  Rendered products/index.json.jbuilder (1.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products.json?page=30&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:12 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"30", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT  "products".* FROM "products" LIMIT 1 OFFSET 29[0m
+  Rendered products/index.json.jbuilder (1.6ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products.json?page=31&pageSize=1&total_pages=100&total_entries=100" for ::1 at 2015-05-29 17:03:13 +0100
+Processing by ProductsController#index as JSON
+  Parameters: {"page"=>"31", "pageSize"=>"1", "total_pages"=>"100", "total_entries"=>"100"}
+  [1m[35mProduct Load (0.4ms)[0m  SELECT  "products".* FROM "products" LIMIT 1 OFFSET 30
+  Rendered products/index.json.jbuilder (1.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms)
