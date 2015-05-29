@@ -2,7 +2,9 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  ], function($, _, Backbone, ApplicationView){
+  'views/application',
+  'views/products/index'
+  ], function($, _, Backbone, ApplicationView, ProductsIndexView){
 
     var layout = function(){
       new ApplicationView().render();
@@ -21,11 +23,12 @@ define([
       layout();
 
       router.on('route:home', function(){
-        console.log("Home");
+
       });
 
       router.on('route:productsIndex', function(){
-        console.log("Products Index")
+
+        new ProductsIndexView();
       });
 
       router.on('route:defaultAction', function(actions) {
