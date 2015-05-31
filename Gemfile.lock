@@ -177,7 +177,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  acts_as_votable
+  acts_as_votable (= 0.10.0)
   byebug
   coffee-rails (~> 4.1.0)
   devise (= 3.4.1)
