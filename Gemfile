@@ -6,6 +6,7 @@ gem 'rmagick', '2.15.0'
 gem 'httparty', '0.13.5'
 gem 'devise', '3.4.1'
 gem 'kaminari', '0.16.3'
+gem 'acts_as_votable', '0.10.0'
 
 gem 'rails', '4.2.1'
 gem 'pg', '0.18.2'
