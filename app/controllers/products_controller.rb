@@ -61,6 +61,22 @@ class ProductsController < ApplicationController
     end
   end
 
+  def like
+    @user = User.find(params[:id])
+    @user.liked_by current_user
+    respond_to do |format|
+      format.html {redirect_to :back}
+    end
+  end
+
+  def dislike
+    @user = User.find(params[:id])
+    @user.disliked_by current_user
+    respond_to do |format|
+      format.html {redirect_to :back}
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

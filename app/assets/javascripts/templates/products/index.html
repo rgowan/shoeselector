@@ -1,6 +1,11 @@
 <h1>Shoes</h1>
 
 <% _.each(products, function(product){ %>
-  <li><img src="<%= product.image_url_large %>" width="380"></li>
+  <li><img src="<%= product.image_url_large %>" width="350"></li>
 <% }); %>
 <button id="next-page">Next</button>
+<br/>
+<div>
+  <button id="yes">✔</button>
+  <button id="no">✘</button>
+</div>
