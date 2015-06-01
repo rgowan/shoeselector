@@ -20,8 +20,23 @@ define([
       render: function(data){
         var template = _.template(WishesTemplate);
         this.$el.html(template({wishes: data.models }));
-      }
-      
+      },
+
+      events: {
+        "click #remove"  : "removeWish"
+      },
+
+      removeWish: function(event){
+          event.preventDefault()
+          var self = this;
+          $.ajax({
+            type: "DELETE",
+            dataType: "JSON",
+            url: "/products/"+product.id+"/dislike"
+          }).done(function(data, response){
+            self.remove();
+          });
+        }
     });
 
     return WishesIndexView
