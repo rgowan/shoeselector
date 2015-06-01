@@ -1,0 +1,22 @@
+{:uriI"µfile:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/application.html?type=text/html&id=91b243594bc504d28f2b1ef5d35f7dc4db2fd413d83a50af99b7a41015345093:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"`/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/application.html;T:	nameI"templates/application;T:logical_pathI"templates/application.html;T:content_typeI"text/html;T:sourceI"K<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/#products">Shoes</a></li>
+    <li><a href="/#wishes">Wishlist</a></li>
+    <div class='login'>
+      <% if current_user %>
+        <%= current_user.email %>
+        <a href=""
+        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Sign In", new_user_session_path %>
+        <%= link_to "Register", new_user_registration_path %>
+      <% end %>
+    </div>
+  </ul>
+</header>
+<main></main>
+<footer>Copyright &copy; 2015 WDI Project3 Raneâ˜‚ - Rane Gowan</footer>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"nfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/application.html;TT:charsetI"
+utf-8;F:digest"%ÑBþA‹º‚Dûá¾—Y‡:“cï:ÇXqYWÏ»k¯Ž:lengthiK:integrityI"9sha-256-0QdC/kGLuoJE++G+l1mHOpNj7zrHHVhxWVfPu2uvFI4=;T:dependencies_digest"%ßØ¦)ª£šš•N¿~`»æ´ñ6ŽË[Ò^ûá'º8ø:idI"E91b243594bc504d28f2b1ef5d35f7dc4db2fd413d83a50af99b7a41015345093;F:
+mtimel+IlU
