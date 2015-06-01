@@ -6,6 +6,9 @@
 <button id="next-page">Next</button>
 <br/>
 <div>
-  <button id="yes">✔</button>
-  <button id="no">✘</button>
+  <button id="like">✔</button>
+  <button id="dislike">✘</button>
 </div>
+
+<%= link_to 'Like', like_user_path(user), method: :put, class: "button" %>
+<%= link_to 'Dislike', dislike_user_path(user), method: :put, class: "button" %>

@@ -1,3 +1,4 @@
 class Wish < ActiveRecord::Base
-  has_many :products through :users
+  belongs_to :user
+  has_many :products
 end
