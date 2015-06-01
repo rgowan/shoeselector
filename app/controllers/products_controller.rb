@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.liked_by current_user
     respond_to do |format|
-      format.json { render :show, status: :ok, location: @product }
+      format.json { render json: @product, status: :ok, location: @product }
     end
   end
 
@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @product.disliked_by current_user
     respond_to do |format|
-      format.json { render :show, status: :ok, location: @product }
+      format.json { render json: @product, status: :ok, location: @product }
     end
   end
 

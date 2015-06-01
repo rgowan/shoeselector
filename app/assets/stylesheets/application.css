@@ -18,7 +18,7 @@ body {
   display: center;
   text-align: center;
   color: #333;
-  letter-spacing: -1px;
+  letter-spacing: -1.25px;
 }
 
 ul {
@@ -33,6 +33,11 @@ img {
   text-align: center;
   min-height: 310px;
   border: 2px solid #f5f5f5;
-  border-radius: 10px;
+  border-radius: 30px;
+}
+
+.login li {
+  display: inline;
+  padding: 10px;
 }
 

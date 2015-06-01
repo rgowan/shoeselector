@@ -3,15 +3,10 @@ define([
   'underscore',
   'backbone',
   'paginator',
-  'views/application',
   'views/products/index',
   'views/wishes/index',
   'views/homepage/index'
-  ], function($, _, Backbone, PageableCollection, ApplicationView, ProductsIndexView, WishesIndexView, HomepageIndexView){
-
-    var layout = function(){
-      new ApplicationView().render();
-    }
+  ], function($, _, Backbone, PageableCollection, ProductsIndexView, WishesIndexView, HomepageIndexView){
 
     var Router = Backbone.Router.extend({
       routes: {
@@ -24,7 +19,6 @@ define([
 
     var initialize = function(){
       var router = new Router;
-      // layout();
 
       router.on('route:home', function(){
         new HomepageIndexView().render();

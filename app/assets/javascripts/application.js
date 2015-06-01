@@ -3,12 +3,12 @@ require.config({
     'jquery-ujs': ['jquery']
   },
   paths: {
-    jquery: 'lib/jquery',
-    underscore: 'lib/underscore',
-    backbone: 'lib/backbone',
-    text: 'lib/text',
-    paginator: 'lib/backbone.paginator',
-    csrf: 'lib/modules/csrf'
+    jquery      : 'lib/jquery',
+    underscore  : 'lib/underscore',
+    backbone    : 'lib/backbone',
+    text        : 'lib/text',
+    paginator   : 'lib/backbone.paginator',
+    csrf        : 'lib/modules/csrf'
   }
 });
 

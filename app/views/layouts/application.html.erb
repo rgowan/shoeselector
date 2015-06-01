@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ShoeSelector</title>
+  <title>Sole Selector™</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag "lib/require", "data-main" => asset_url("application.js") %>
   <%= csrf_meta_tags %>
@@ -11,6 +11,7 @@
     <ul>
       <div class="login">
         <% if current_user %>
+          <li><a href="/#">Home</a></li>
           <li><a href="/#products">Shoes</a></li>
           <li><a href="/#wishes">Wishlist</a></li>
           <li><%= current_user.email %></li>
@@ -23,6 +24,5 @@
     </ul>
   </header>
   <%= yield %>
-  <footer>Copyright &copy; 2015 WDI Project3 Rane☂ - Rane Gowan</footer>
 </body>
 </html>

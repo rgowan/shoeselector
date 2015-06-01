@@ -1,4 +1,4 @@
-define([
+ define([
   'jquery',
   'underscore',
   'backbone',
@@ -56,7 +56,7 @@ define([
       dislikeProduct: function(event){
         event.preventDefault()
         var self = this;
-        $.ajax({
+        $.ajax({  
           type: "PUT",
           dataType: "JSON",
           url: "/products/"+self.id+"/dislike"
