@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root "statics#index"
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   resources :wishes, only: [:index]
   resources :products do
     collection do 
