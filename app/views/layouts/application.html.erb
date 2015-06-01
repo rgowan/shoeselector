@@ -11,14 +11,11 @@
     <ul>
       <div class="login">
         <% if current_user %>
-          <li><a href="/#">Home</a></li>
           <li><a href="/#products">Shoes</a></li>
           <li><a href="/#wishes">Wishlist</a></li>
-          <li><%= current_user.email %></li>
+          <li><%= current_user.name %></li>
+          <li><%= image_tag(current_user.image, width:"50") %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-          <li><%= link_to "Sign In", new_user_session_path %></li>
-          <li><%= link_to "Register", new_user_registration_path %></li>
         <% end %>
       </div>
     </ul>
