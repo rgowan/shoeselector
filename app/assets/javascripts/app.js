@@ -1,9 +1,10 @@
 define([
   'jquery',
+  'jquery_ujs',
   'underscore',
   'backbone',
   'router'
-], function($, _, Backbone, Router){
+], function($, jQueryUjs, _, Backbone, Router){
 
   var initialize = function(){
     Router.initialize();

@@ -19,8 +19,9 @@ define([
       },
       render: function(data){
         var template = _.template(WishesTemplate);
-        this.$el.html(template({wishes: data.models}));
+        this.$el.html(template({wishes: data.models }));
       }
+      
     });
 
     return WishesIndexView

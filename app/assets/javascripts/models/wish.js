@@ -6,7 +6,8 @@ define([
     return Backbone.Model.extend({
       urlRoot: "/wishes",
       defaults: {
-        id: null
+        id: null,
+        products: []
       }
     });
   });

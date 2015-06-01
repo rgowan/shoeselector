@@ -1,0 +1,14 @@
+{:uriI"¶file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/wishes/index.html?type=text/html&id=556057d623b519dfabdccc5e6bf7aee9a990c0077088cc38b7fa1f0ec56526b3:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"a/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/wishes/index.html;T:	nameI"templates/wishes/index;T:logical_pathI" templates/wishes/index.html;T:content_typeI"text/html;T:sourceI"<h1>Wishlist</h1>
+
+<% debugger %>
+
+<% wishes.each(function(wish){ %>
+  <li><img src="<%= wish.image_url_large %>" width="200"></li>
+  <li><%= wish.name %></li>
+  <li><%= wish.description %></li>
+  <li><%= wish.price_retail %></li>
+  <li><%= wish.url %></li>
+<% }); %>;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"ofile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/wishes/index.html;TT:charsetI"
+utf-8;F:digest"%9ïdÅí6l÷jÏt-[ãUîB2…À½X·ğ:lengthi:integrityI"9sha-256-Oe8EZMXtNmwB92rPdIGBLVvjVe5CMhWFwL1YF7fwnhk=;T:dependencies_digest"%2xªˆjš4­:«}ƒàšå‘üÇy<AÊ$µ„º:idI"E556057d623b519dfabdccc5e6bf7aee9a990c0077088cc38b7fa1f0ec56526b3;F:
+mtimel+ \lU

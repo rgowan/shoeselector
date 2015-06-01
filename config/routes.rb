@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root "statics#index"
   devise_for :users
-  resources :wishes
+  resources :wishes, only: [:index]
   resources :products do
     collection do 
       get "likes"
