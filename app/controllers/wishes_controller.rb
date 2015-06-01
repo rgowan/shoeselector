@@ -4,7 +4,8 @@ class WishesController < ApplicationController
   # GET /wishes
   # GET /wishes.json
   def index
-    @wishes = Wish.all
+    @products = current_user.find_liked_items 
+    # @wishes = Wish.all
   end
 
   # GET /wishes/1

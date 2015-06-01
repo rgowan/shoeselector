@@ -3,17 +3,20 @@ define([
   'underscore',
   'backbone',
   'collections/products',
-  'text!templates/products/index.html'
-  ], function($, _, Backbone, ProductsCollection, ProductsTemplate){
+  'text!templates/products/index.html',
+  'csrf'
+  ], function($, _, Backbone, ProductsCollection, ProductsTemplate, csrf){
 
     var ProductsIndexView = Backbone.View.extend({
       el: 'main',
       initialize: function(){
-        this.currentPage = 1; // or whateva
-        var self = this;
-        var collection = new ProductsCollection();
+        this.currentPage  = 1;
+        var self          = this;
+        var collection    = new ProductsCollection();
         collection.getPage(1).done(function(data){
-          self.render(data)
+          self.currentPage++;
+          self.id = data[0].id;
+          self.render(data);
         });
       },
       render: function(data){
@@ -22,16 +25,43 @@ define([
       },
 
       events: {
-        "click #next-page": "nextPage"
+        "click #next-page"  : "nextPage",
+        "click #like"       : "likeProduct",
+        "click #dislike"    : "dislikeProduct"
       },
 
       nextPage: function(event){
         event.preventDefault();
-        var self = this;
-        var collection = new ProductsCollection();
+        var self          = this;
+        var collection    = new ProductsCollection();
         collection.getPage(this.currentPage).done(function(data){
           self.currentPage++
+          self.id = data[0].id;
           self.render(data)
+        });
+      },
+
+      likeProduct: function(event){
+        event.preventDefault()
+        var self = this;
+        $.ajax({
+          type: "PUT",
+          dataType: "JSON",
+          url: "/products/"+self.id+"/like"
+        }).done(function(data, response){
+          self.nextPage(event)
+        });
+      },
+
+      dislikeProduct: function(event){
+        event.preventDefault()
+        var self = this;
+        $.ajax({
+          type: "PUT",
+          dataType: "JSON",
+          url: "/products/"+self.id+"/dislike"
+        }).done(function(data, response){
+          self.nextPage(event)
         });
       }
     });

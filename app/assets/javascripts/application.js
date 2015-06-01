@@ -4,12 +4,15 @@ require.config({
     underscore: 'lib/underscore',
     backbone: 'lib/backbone',
     text: 'lib/text',
-    paginator: 'lib/backbone.paginator'
+    paginator: 'lib/backbone.paginator',
+    csrf: 'lib/modules/csrf'
   }
 });
 
 require([
   'app',
 ], function(App){
-  App.initialize();
+  if ($('main').length > 0) {
+    App.initialize();
+  }
 });

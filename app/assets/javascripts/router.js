@@ -24,7 +24,7 @@ define([
 
     var initialize = function(){
       var router = new Router;
-      layout();
+      // layout();
 
       router.on('route:home', function(){
         new HomepageIndexView().render();

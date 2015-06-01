@@ -7,6 +7,10 @@ class ProductsController < ApplicationController
     @products = Product.all.page(params[:page]).per(1)
   end
 
+  def likes
+    @products = current_user.find_liked_items 
+  end
+
   # GET /products/1
   # GET /products/1.json
   def show
@@ -62,18 +66,18 @@ class ProductsController < ApplicationController
   end
 
   def like
-    @user = User.find(params[:id])
-    @user.liked_by current_user
+    @product = Product.find(params[:id])
+    @product.liked_by current_user
     respond_to do |format|
-      format.html {redirect_to :back}
+      format.json { render :show, status: :ok, location: @product }
     end
   end
 
   def dislike
-    @user = User.find(params[:id])
-    @user.disliked_by current_user
+    @product = Product.find(params[:id])
+    @product.disliked_by current_user
     respond_to do |format|
-      format.html {redirect_to :back}
+      format.json { render :show, status: :ok, location: @product }
     end
   end
 

@@ -3,6 +3,16 @@
     <li><a href="/">Home</a></li>
     <li><a href="/#products">Shoes</a></li>
     <li><a href="/#wishes">Wishlist</a></li>
+    <div class='login'>
+      <% if current_user %>
+        <%= current_user.email %>
+        <a href=""
+        <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+      <% else %>
+        <%= link_to "Sign In", new_user_session_path %>
+        <%= link_to "Register", new_user_registration_path %>
+      <% end %>
+    </div>
   </ul>
 </header>
 <main></main>
