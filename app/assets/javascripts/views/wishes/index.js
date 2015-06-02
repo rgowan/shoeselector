@@ -27,22 +27,9 @@ define([
         "click .remove"  : "removeWish"
       },
 
-      removeWish: function(event){
-          // event.preventDefault()
-          // var wish = $(event.currentTarget);
-          // var id = $(event.currentTarget).data("id");
-          // this.wish = new Wish({id: id});
-          // this.wish.destroy({
-          //   Backbone.history.navigate('wishes', true);
-          // })
-          // $.ajax({
-          //   type: "PUT", //Delete?
-          //   dataType: "JSON",
-          //   url: "/products/"+self.id+"/dislike"
-          // }).done(function(data, response){
-          //   wish.destroy();
-          // });
-        }
+      removeWish: function(){
+        onDislike();  
+      }
     });
 
     return WishesIndexView

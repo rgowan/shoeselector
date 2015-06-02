@@ -1,0 +1,26 @@
+{:uriI"¸file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html?type=text/html&id=7d681115533a7228b45eb5b7c23f500d0692542ad3184ae30b9c549fbe7a7aa9:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"Y<h1>Shoes</h1>
+<div class="container">
+  <div id="tinderslide">
+    <ul>
+      <% _.each(products, function(product){ %>
+        <li class="panel_<%= product.id %>" data-id="<%= product.id %>">
+          <div class="img">
+            <img src="<%= product.image_url_large %>" width="350">
+          </div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</div>
+
+<!-- jTinder trigger by buttons  -->
+<div class="actions">
+  <button class="dislike" id="dislike">âœ˜</button> 
+  <button class="like" id="like">âœ”</button>
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;TT:charsetI"
+utf-8;F:digest"%×Œ'ƒöáí—H•x”àÚ±ÜÈzÄè÷|ýGAzyüŠ:lengthiY:integrityI"9sha-256-14wng/bhf+2XSAKVeJTg2rHcyAZ6xOj3fP1HQXp5/Io=;T:dependencies_digest"%=äZCígÅæs1)…FžÌëˆ>2«„ãÅñó‚ ¹:idI"E7d681115533a7228b45eb5b7c23f500d0692542ad3184ae30b9c549fbe7a7aa9;F:
+mtimel+ˆìmU

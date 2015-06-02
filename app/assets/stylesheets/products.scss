@@ -2,20 +2,6 @@ ul {
   padding: 0px;
 }
 
-ul.column#like {
-  float: right;
-  background: red;
-  min-height: 310px;
-  min-width: 300px;
-}
-
-ul.column#dislike {
-  float:left;
-  background: red;
-  min-height: 310px;
-  min-width: 300px;
-}
-
 ul.column.ui-sortable {
   padding: 0px;
 }
@@ -35,4 +21,9 @@ div.selection ul li img {
   min-height: 310px;
   border: 2px solid #f5f5f5;
   border-radius: 30px;
+}
+
+div#tinderslide ul li img {
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
 }
