@@ -1,9 +1,17 @@
 <h1>Shoes</h1>
-<% _.each(products, function(product){ %>
-  <li><img src="<%= product.image_url_large %>" width="350"></li>
-<% }); %>
-<br/>
-<div>
-  <button id="like">✔</button>
-  <button id="dislike">✘</button>
+<div class="selection">
+<ul class="column" id="dislike">Dislike</ul>
+  <ul class="column">
+    <li>
+      <ul>
+      <% _.each(products, function(product){ %>
+        <li><img src="<%= product.image_url_large %>" width="350"></li>
+      <% }); %>
+      </ul>
+    </li>
+  </ul>
+  <ul class="column" id="like">Like</ul>
 </div>
+<br>
+<button id="dislike">✘</button> 
+<button id="like">✔</button>

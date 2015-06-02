@@ -14,7 +14,6 @@
           <li><a href="/#products">Shoes</a></li>
           <li><a href="/#wishes">Wishlist</a></li>
           <li><%= current_user.name %></li>
-          <li><%= image_tag(current_user.image, width:"50") %></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         <% end %>
       </div>

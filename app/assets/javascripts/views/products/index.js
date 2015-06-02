@@ -1,11 +1,12 @@
  define([
   'jquery',
+  'jquery_ui',
   'underscore',
   'backbone',
   'collections/products',
   'text!templates/products/index.html',
   'csrf'
-  ], function($, _, Backbone, ProductsCollection, ProductsTemplate, csrf){
+  ], function($, UI, _, Backbone, ProductsCollection, ProductsTemplate, csrf){
 
     var ProductsIndexView = Backbone.View.extend({
       el: 'main',
@@ -21,7 +22,12 @@
       },
       render: function(data){
         var template = _.template(ProductsTemplate);
-        this.$el.html(template({products: data}));
+        this.$el.html(template({products: data})).hide().fadeIn("fast");
+        
+        $('.column').sortable({
+          connectWith: '.sortable',
+          update: "nextPage"
+        }).disableSelection();
       },
 
       events: {
