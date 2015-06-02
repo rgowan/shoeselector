@@ -10,6 +10,7 @@ gem 'acts_as_votable', '0.10.0'
 gem 'active_model_serializers', '0.9.3'
 gem 'omniauth', '1.2.2'
 gem 'omniauth-facebook', '2.0.1'
+gem 'bourbon', '4.2.2'
 
 gem 'rails', '4.2.1'
 gem 'pg', '0.18.2'
