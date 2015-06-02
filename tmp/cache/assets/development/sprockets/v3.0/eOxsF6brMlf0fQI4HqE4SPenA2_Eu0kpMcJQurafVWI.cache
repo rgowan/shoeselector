@@ -1,0 +1,76 @@
+{:uriI"¸file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html?type=text/html&id=f5b84835705bff3176f7303b1cec9122ebb53ea7624aa0bd6454b43fda7c87c8:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"Ô<h1>Shoes</h1>
+    <!-- start jtinder container -->
+    <div id="tinderslide">
+        <ul>
+            <li class="pane1">
+                <div class="img"></div>
+                <div>Miami Beach</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li class="pane2">
+                <div class="img"></div>
+                <div>San Francisco</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li class="pane3">
+                <div class="img"></div>
+                <div>Chicago</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li class="pane4">
+                <div class="img"></div>
+                <div>New York</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+            <li class="pane5">
+                <div class="img"></div>
+                <div>Beach</div>
+                <div class="like"></div>
+                <div class="dislike"></div>
+            </li>
+        </ul>
+    </div>
+    <!-- end jtinder container -->
+</div>
+<!-- end padding container -->
+
+<!-- jTinder trigger by buttons  -->
+<div class="actions">
+    <a href="#" class="dislike"><i></i></a>
+    <a href="#" class="like"><i></i></a>
+</div>
+
+<!-- jTinder status text  -->
+<div id="status"></div>
+
+
+<div class="selection">
+<ul class="column" id="dislike">Dislike</ul>
+  <ul class="column">
+    <li>
+      <ul>
+      <% _.each(products, function(product){ %>
+        <li class="panel1">
+          <div class="img">
+            <img src="<%= product.image_url_large %>" width="350">
+          </div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+      <% }); %>
+      </ul>
+    </li>
+  </ul>
+  <ul class="column" id="like">Like</ul>
+</div>
+<br>
+<button id="dislike">âœ˜</button> 
+<button id="like">âœ”</button>
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;TT:charsetI"
+utf-8;F:digest"%R%—S·®ãâàë‰ÆÆ]†¬¸Ôþ×7&i5vÉÁ¥:lengthiÔ:integrityI"9sha-256-UiWXU7eu4+Lg64nGGcZdhqy41P7XNyYeB2k1dg3JwaU=;T:dependencies_digest"%]¹j4Ž’xAƒ²•³X°‘ætÑ¬D‡ÜÊ=^ÐMj‡:idI"Ef5b84835705bff3176f7303b1cec9122ebb53ea7624aa0bd6454b43fda7c87c8;F:
+mtimel+Û»mU

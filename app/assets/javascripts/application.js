@@ -4,13 +4,13 @@ require.config({
   },
   paths: {
     jquery      : 'lib/jquery',
-    jquery_ui   : 'lib/jquery_ui.min',
     underscore  : 'lib/underscore',
     backbone    : 'lib/backbone',
     text        : 'lib/text',
     paginator   : 'lib/backbone.paginator',
     csrf        : 'lib/modules/csrf',
-    jquery_ujs  : 'lib/jquery_ujs'
+    jquery_ujs  : 'lib/jquery_ujs',
+    tinder      : 'lib/modules/tinder'
   }
 });
 

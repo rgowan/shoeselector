@@ -3,10 +3,12 @@ define([
   'jquery_ujs',
   'underscore',
   'backbone',
-  'router'
-], function($, jQueryUjs, _, Backbone, Router){
+  'router',
+  'lib/modules/bourbon'
+], function($, jQueryUjs, _, Backbone, Router, Bourbon){
 
   var initialize = function(){
+    Bourbon();
     Router.initialize();
   }
 

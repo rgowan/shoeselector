@@ -1,0 +1,30 @@
+{:uriI"¸file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html?type=text/html&id=1c817664c2f6aba862485fc6d29f1bfec380a4303a928bd976e13e904f633c8b:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"u<h1>Shoes</h1>
+<div id="tinderslide">
+  <ul>
+    <% _.each(products, function(product){ %>
+      <li class="panel1">
+        <div class="img">
+          <img src="<%= product.image_url_large %>" width="350">
+        </div>
+        <div class="like"></div>
+        <div class="dislike"></div>
+      </li>
+    <% }); %>
+  </ul>
+</div>
+<!-- <br>
+<button id="dislike">âœ˜</button> 
+<button id="like">âœ”</button> -->
+
+<!-- jTinder trigger by buttons  -->
+<!-- <div class="actions">
+    <a href="#" class="dislike"><i></i></a>
+    <a href="#" class="like"><i></i></a>
+</div> -->
+
+<!-- jTinder status text  -->
+<div id="status"></div>
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;TT:charsetI"
+utf-8;F:digest"%/aäcXÖÚ`PÆ¹‹ßà÷0¬»\làÈk%UuM|Û:lengthiu:integrityI"9sha-256-L2HkY1jW2mBQxrmL3wzg9zCsu1xs4MhrJVV/dQ1NfNs=;T:dependencies_digest"%éúXw	_‰Ñ/'ñGøÄ	×^·5pü NU„¿œßZ:idI"E1c817664c2f6aba862485fc6d29f1bfec380a4303a928bd976e13e904f633c8b;F:
+mtimel+Â¼mU

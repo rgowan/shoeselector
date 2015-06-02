@@ -1,12 +1,13 @@
  define([
   'jquery',
-  'jquery_ui',
   'underscore',
   'backbone',
   'collections/products',
   'text!templates/products/index.html',
-  'csrf'
-  ], function($, UI, _, Backbone, ProductsCollection, ProductsTemplate, csrf){
+  'csrf',
+  "lib/jquery.transform2d",
+  "lib/jquery.jTinder"
+  ], function($, _, Backbone, ProductsCollection, ProductsTemplate, csrf){
 
     var ProductsIndexView = Backbone.View.extend({
       el: 'main',
@@ -20,14 +21,10 @@
           self.render(data);
         });
       },
-      render: function(data){
+      render: function(data, prevEl){
         var template = _.template(ProductsTemplate);
         this.$el.html(template({products: data})).hide().fadeIn("fast");
-        
-        $('.column').sortable({
-          connectWith: '.sortable',
-          update: "nextPage"
-        }).disableSelection();
+        this.tinder();
       },
 
       events: {
@@ -36,8 +33,31 @@
         "click #dislike"    : "dislikeProduct"
       },
 
-      nextPage: function(event){
-        event.preventDefault();
+      tinder: function() {
+        var self = this;
+        $("#tinderslide").jTinder({
+          onLike: function(item) {
+            $('#status').html('Like image ' + (item.index()+1));
+            self.actionProduct(item, "like");
+          },
+          onDislike: function(item) {
+            $('#status').html('Dislike image ' + (item.index()+1));
+            self.actionProduct(item, "dislike");
+          },
+          animationRevertSpeed: 200,
+          animationSpeed: 400,
+          threshold: 1,
+          likeSelector: '.like',
+          dislikeSelector: '.dislike'
+        });
+
+        $('.actions .like, .actions .dislike').on('click', function(e){
+          e.preventDefault();
+          $("#tinderslide").jTinder($(this).attr('class'));
+        });
+      },
+
+      nextPage: function(){
         var self          = this;
         var collection    = new ProductsCollection();
         collection.getPage(this.currentPage).done(function(data){
@@ -47,27 +67,19 @@
         });
       },
 
-      likeProduct: function(event){
-        event.preventDefault()
+      actionProduct: function(item, verb){
         var self = this;
         $.ajax({
           type: "PUT",
           dataType: "JSON",
-          url: "/products/"+self.id+"/like"
+          url: "/products/"+item.data("id")+"/"+verb
         }).done(function(data, response){
-          self.nextPage(event)
-        });
-      },
-
-      dislikeProduct: function(event){
-        event.preventDefault()
-        var self = this;
-        $.ajax({  
-          type: "PUT",
-          dataType: "JSON",
-          url: "/products/"+self.id+"/dislike"
-        }).done(function(data, response){
-          self.nextPage(event)
+          if ($("#tinderslide ul li").length < 3) {
+            self.nextPage()
+          } else {
+            $("#tinderslide ul li:last-child").remove();
+            console.log("don't need to reload");
+          }
         });
       }
     });

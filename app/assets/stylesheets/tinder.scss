@@ -1,0 +1,213 @@
+#tinderslide ul li:last-child {
+  display: block;
+}
+#tinderslide ul li {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//colors
+$white: #fff;
+$black_20: rgba(0, 0, 0, .2);
+$color_gallery_approx: #eee;
+$black: #000;
+$color_bon_jour_approx: #dfdfdf;
+$color_storm_dust_20_approx: rgba(96, 96, 96, 0.2);
+$color_black_haze_approx: #f7f7f7;
+$color_shady_lady_approx: #a7a7a7;
+$color_silver_chalice_approx: #aaa;
+$color_fuscous_gray_approx: #555;
+$color_wild_sand_approx: #f5f5f5;
+
+//fonts
+$font_0: arial;
+
+//urls
+$url_0: url(../img/liked.png);
+$url_1: url(../img/nope.png);
+$url_2: url(../img/dislike_button.png);
+$url_3: url(../img/like_button.png);
+$url_4: url(../img/pane/pane5.jpg);
+$url_5: url(../img/pane/pane4.jpg);
+$url_6: url(../img/pane/pane3.jpg);
+$url_7: url(../img/pane/pane2.jpg);
+$url_8: url(../img/pane/pane1.jpg);
+
+//original selectors
+//#tinderslide .like, #tinderslide .dislike
+%extend_2 {
+  background: $url_0 no-repeat scroll 0 0;
+  opacity: 0;
+  height: 80px;
+  position: absolute;
+  width: 170px;
+  left: 45px;
+  top: 40px;
+  z-index: 1;
+  overflow: hidden;
+  //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  transform: translate3d(0%,0,0) scale3d(1,1,1);
+  //Instead of the line below you could use @includebackface-visibility($visibility)
+  backface-visibility: hidden;
+}
+
+
+#tinderslide {
+  position: relative;
+  background: $white;
+  min-height: 310px;
+
+  ul {
+    margin: 0;
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+
+  // li {
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   z-index: 2;
+  //   left: 0;
+  //   //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  //   box-shadow: 0 0 20px $black_20;
+  //   overflow: hidden;
+  //   text-align: center;
+  //   padding: 10px;
+  //   background: $color_gallery_approx;
+  //   font-size: 24px;
+  //   color: $black;
+  //   border: 1px solid $white;
+  //   border: 1px solid $color_bon_jour_approx;
+  //   border: 1px solid $color_storm_dust_20_approx;
+  //   //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  //   transform: translate3d(0%,0,0) scale3d(1,1,1);
+  //   //Instead of the line below you could use @includebackface-visibility($visibility)
+  //   backface-visibility: hidden;
+  //   h2 {
+  //     color: $white;
+  //     font-size: 30px;
+  //     text-align: center;
+  //     position: absolute;
+  //     top: 40%;
+  //     left: 0;
+  //     width: 100%;
+  //     //Instead of the line below you could use @includetext-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  //     text-shadow: -1px -1px 0 $black_20;
+  //   }
+  //   &.pane1 {
+  //     //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  //     transform: rotate(-1deg);
+  //   }
+  //   &.pane2 {
+  //     //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  //     transform: rotate(2deg);
+  //   }
+  // }
+  // .like {
+  //   @extend %extend_2;
+  // }
+  // .dislike {
+  //   @extend %extend_2;
+  //   right: 45px;
+  //   left: auto;
+  //   background: $url_1 no-repeat scroll 0 0;
+  // }
+  // .img {
+  //   height: 90%;
+  //   width: 100%;
+  //   margin-bottom: 5px;
+  //   position: relative;
+  //   //Instead of the line below you could use @includetransform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+  //   transform: translate3d(0%,0,0) scale3d(1,1,1);
+  //   overflow: hidden;
+  //   //Instead of the line below you could use @includebackface-visibility($visibility)
+  //   backface-visibility: hidden;
+  // }
+  // .pane5 .img {
+  //   background: $url_4 no-repeat scroll center center;
+  //   background-size: cover;
+  // }
+  // .pane4 .img {
+  //   background: $url_5 no-repeat scroll center center;
+  //   background-size: cover;
+  // }
+  // .pane3 .img {
+  //   background: $url_6 no-repeat scroll center center;
+  //   background-size: cover;
+  // }
+  // .pane2 .img {
+  //   background: $url_7 no-repeat scroll center center;
+  //   background-size: cover;
+  // }
+  // .pane1 .img {
+  //   background: $url_8 no-repeat scroll center center;
+  //   background-size: cover;
+  // }
+}
+.actions {
+  text-align: center;
+  width: 304px;
+  margin: 0 auto;
+  overflow: hidden;
+  div {
+    position: relative;
+    display: inline-block;
+    margin-right: -4px;
+  }
+  a {
+    float: left;
+    display: block;
+    background-color: $color_black_haze_approx;
+    color: $color_shady_lady_approx;
+    margin: 36px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    line-height: 144px;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 50%;
+    outline: none;
+    //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 3px 8px $color_silver_chalice_approx, inset 0 2px 3px $white;
+    i {
+      display: inline-block;
+      width: 40px;
+      height: 80px;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $color_fuscous_gray_approx;
+      background: $color_wild_sand_approx;
+    }
+    &.dislike i {
+      background: $url_2 no-repeat scroll center center;
+    }
+    &.like i {
+      background: $url_3 no-repeat scroll center center;
+    }
+  }
+}
+#status {
+  text-align: center;
+  font-size: 18px;
+  font-family: $font_0;
+  margin-top: 30px;
+  font-weight: bold;
+}

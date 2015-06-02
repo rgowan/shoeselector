@@ -1,0 +1,28 @@
+{:uriI"∏file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html?type=text/html&id=882f9c9bca7957441b09c9fa7f563cc84f64940bea271a95b0773c75b83d9139:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"G<h1>Shoes</h1>
+<div class="selection">
+<ul class="column" id="dislike">Dislike</ul>
+  <ul class="column">
+    <li>
+      <ul id="tinderslide">
+      <% _.each(products, function(product){ %>
+        <li class="panel1">
+          <div class="img">
+            <img src="<%= product.image_url_large %>" width="350">
+          </div>
+          <div class="like"></div>
+          <div class="dislike"></div>
+        </li>
+      <% }); %>
+      </ul>
+    </li>
+  </ul>
+  <ul class="column" id="like">Like</ul>
+</div>
+<br>
+<button id="dislike">‚úò</button> 
+<button id="like">‚úî</button>
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;TT:charsetI"
+utf-8;F:digest"%k6√vï<Ê=©Ëì-rædñÆ\£Ù”úJÁ{M:lengthiG:integrityI"9sha-256-DWs2w3aVPOY9BKkM6JMCGy1yDL5klq5co/TTnErne00=;T:dependencies_digest"%†kn‹˜>dªlõÇ]µ9ËÔó_jv—4¿3Í¢°
+ä:idI"E882f9c9bca7957441b09c9fa7f563cc84f64940bea271a95b0773c75b83d9139;F:
+mtimel+ùªmU
