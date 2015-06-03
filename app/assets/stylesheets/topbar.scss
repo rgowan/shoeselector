@@ -2,29 +2,41 @@ header nav ul li {
   display: inline;
 }
 
-header nav ul li.home {
-  padding-top: 15px;
-  padding-left: 15px;
-  float: left;
+header nav ul li.account {
+  margin-top: 19px;
+  float: right;
+  margin-right: 10px;
 }
 
-header nav ul li.account {
-  padding-top: 15px;
-  float: right;
-  padding-right: 15px;
+header nav ul li.topbar-logo{
+  margin-top: 12px;
+  margin-left: 10px;
+  font-weight: 700;
+  float: left;
+  color: #f5f5f5;
+  max-width: 20px;
 }
 
 header nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #f5f5f5;
   font-size: 20px;
+  font-weight: 600;
 }
 
 header {
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #333;
+  background-color: #222;
+  height: 65px;
 }
+
  header nav ul {
   padding: 0px;
   margin: 0 auto;
+ }
+
+ li.user-image img {
+  margin: 0 auto;
+  margin-left: 10px; 
+  margin-right: 10px; 
+  padding-top: 11px;
  }
