@@ -1,6 +1,6 @@
 header.navigation {
   background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
+  border-bottom: 1px solid darken($navigation-background, 20);
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
@@ -12,14 +12,14 @@ header.navigation {
   position: fixed;
   // top: 0;
   // left: 0;
-  // z-index: 9999;
-  width: 100%;
-  // height: 50px;
+  z-index: 999;
+  min-width: 100%;
+  min-height: $navigation-height;
+  border-bottom: 1px solid darken($navigation-background, 20);
   background-color: $navigation-background;
 }
 
 .logo {
-  float: left;
   max-height: $navigation-height;
   padding-left: $navigation-padding;
   padding-right: 2em;
@@ -47,7 +47,7 @@ header.navigation {
 
   &:focus,
   &:hover {
-    color: $navigation-color-hover;
+    color: darken($navigation-background, 20);
   }
 }
 

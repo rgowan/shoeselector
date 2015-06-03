@@ -13,6 +13,10 @@ class ApplicationController < ActionController::Base
   #     redirect_to root_path if (!request.xhr? && request.env['PATH_INFO'] != root_path)
   #   end
 
+  def after_sign_in_path_for(resource)
+    '/#/products'
+  end
+
   protected
 
   def configure_permitted_parameters

@@ -1,15 +1,67 @@
 section.welcome {
-  background: #f5f5f5;
   margin: 0 auto;
-  height: 600px;
+  position: relative;
+
+  .curve {
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
+    height: 1.5em;
+    border-radius: 100% 100% 0 0;
+    background: #fff;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 600px) {
+  section.welcome {
+    background: url(http://www.huhmagazine.co.uk/images/uploaded/nikeairmax1_patch_00.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 560px;
+  }
+}
+
+@media (max-width: 600px) {
+  section.welcome {
+    background: #222;
+    height: 300px;
+  }
+}
+
+
+section.info-slider {
+  margin: 0 auto;
+  height: 625px;
+}
+
+section.info-slider img{
+  margin: 0 auto;
 }
 
 section.welcome h1 {
-  color: #333;
+  color: #fff;
   font-size: 50px;
-  padding: 15px;
+  padding: 15px 0;
 }
 
-hr {
-  max-width: 100px;
+.rotated {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg); 
+  -o-transform: rotate(180deg);
+  // -moz-transition: all 1s ease;
+  // -webkit-transition: all 1s ease;
+  // -o-transition: all 1s ease;
+  // transition: all 1s ease;
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+}
+
+footer {
+  background: #1693A5;
 }
