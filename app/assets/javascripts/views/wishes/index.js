@@ -28,7 +28,7 @@ define([
       },
 
       removeWish: function(){
-        onDislike();  
+        this.onDislike()
       }
     });
 
