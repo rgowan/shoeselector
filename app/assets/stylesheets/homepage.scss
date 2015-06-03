@@ -1,5 +1,19 @@
 section.welcome {
   position: relative;
+  margin: 0 auto;
+  background: #222;
+  height: 480px;
+
+  h1 {
+    color: #fff;
+    font-size: 50px;
+    padding: 15px 0;
+    margin-top: -50px;
+  }
+
+  img.homepage-logo {
+    margin: 0 auto;
+  }
 
   .curve-top {
     position: absolute;
@@ -8,58 +22,29 @@ section.welcome {
     width: 110%;
     height: 1.5em;
     border-radius: 100% 100% 0 0;
-    background: #fff;
     overflow: hidden;
-    background: #f5f5f5;
+    background: #E9EFF2;
   }
 }
-
-footer {
-  background: #222;
-  height: 100px;
-
-  .curve-bottom {
-    position: absolute;
-    bottom: 0;
-    left: -5%;
-    width: 110%;
-    height: 1.5em;
-    border-radius: 0 0 100% 100%;
-    background: #fff;
-    overflow: hidden;
-  }
-
-  h4 {
-    color: #fff;
-  }
-}
-
-@media (max-width: 559px) {
-  section.welcome {
-    margin: 0 auto;
-    background: #222;
-    height: 480px;
-  }
-}
-
 
 section.info-slider {
   margin: 0 auto;
   height: 625px;
   margin-bottom: -50px;
   margin-top: -10px;
-  background: #f5f5f5;
-}
+  background: #E9EFF2;
 
-section.info-slider img{
-  margin: 0 auto;
-}
+  img{
+    margin: 0 auto;
+  }
 
-section.welcome h1 {
-  color: #fff;
-  font-size: 50px;
-  padding: 15px 0;
-  margin-top: -50px;
+  .drop {
+    margin-top: 20px;
+  }
+
+  h3 {
+    color: #222;
+  }
 }
 
 .rotated {
@@ -73,7 +58,7 @@ section.welcome h1 {
   // -o-transition: all 1s ease;
   // transition: all 1s ease;
   outline: 1px solid transparent;
-  -webkit-backface-visibility: hidden;
+  // -webkit-backface-visibility: hidden;
 }
 
 footer {
@@ -88,12 +73,19 @@ footer {
     width: 110%;
     height: 1.5em;
     border-radius: 0 0 100% 100%;
-    background: #fff;
     overflow: hidden;
-    background: #f5f5f5;
+    background: #E9EFF2;
+  }  
+  h4 {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    float: left;
   }
-}
-
-div button.slick-prev {
-  display: none;
+  ul.dev-info li a {
+    text-decoration: none;
+    color: #f5f5f5;
+  }
 }

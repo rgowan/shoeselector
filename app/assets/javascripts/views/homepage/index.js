@@ -40,12 +40,12 @@ define([
         $('.swipe').slick({
           swipe: true
         });
-        // $('.logo-slide').slick({
-        //   infinite: true,
-        //   speed: 300,
-        //   fade: true,
-        //   cssEase: 'linear'
-        // });
+        $('.logo-slide').slick({
+          infinite: true,
+          speed: 300,
+          fade: true,
+          cssEase: 'linear'
+        });
       }
     });
 
