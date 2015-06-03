@@ -28,7 +28,14 @@ define([
       },
 
       removeWish: function(){
-        this.onDislike()
+        var self = this;
+        $.ajax({
+          type: "DELETE",
+          dataType: "JSON",
+          url: "wishes/"+self.id+"/dislike"
+        }).done(function(data, response){
+          
+        })
       }
     });
 

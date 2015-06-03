@@ -23,7 +23,7 @@
       },
       render: function(data, prevEl){
         var template = _.template(ProductsTemplate);
-        this.$el.html(template({products: data})).hide().fadeIn("fast");
+        this.$el.html(template({products: data}))
         this.tinder();
       },
 
