@@ -1,8 +1,0 @@
-{:uriI"∏file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html?type=text/html&id=5e8a8648e802561f19984e19ddda5f97fb8a91ccc7703024f416eee5ad391483:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"Ö<h1>Shoes</h1>
-
-<% _.each(products, function(product){ %>
-  <li><img src="<%= product.image_url_large %>" width="380"></li>
-<% }); %>;T:metadata{	:dependencieso:Set:
-@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;TT:charsetI"
-utf-8;F:digest"%@Ûo@æ‡H≈∑SuÆp Æ“pA¡Éç¯:Ñ˝Î:lengthiÖ:integrityI"9sha-256-QBfzb0C+BeBIxRG3U3WucMquDdJwQcGDjRL4EDqE/es=;T:dependencies_digest"%≥G›ïﬁyLô»OÆ¨g‹¯mT∞`õ'Ïruø—:idI"E5e8a8648e802561f19984e19ddda5f97fb8a91ccc7703024f416eee5ad391483;F:
-mtimel+“hU

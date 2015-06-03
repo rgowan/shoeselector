@@ -1,21 +1,0 @@
-{:uriI"µfile:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/application.html?type=text/html&id=4e68d149347d95e1581d36605cc3eff325119d234ce58a0f459f5323348f5c91:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"`/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/application.html;T:	nameI"templates/application;T:logical_pathI"templates/application.html;T:content_typeI"text/html;T:sourceI"Ú<header>
-<nav>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/#products">Shoes</a></li>
-    <li><a href="/#wishes">Wishlist</a></li>
-    <% if current_user %>
-      <li><%= current_user.get("email") %></li>
-      <li><a href="">Log Out</a></li>
-    <% else %>
-      <li><a href="">Sign In</a></li>
-      <li><a href="">Register</a></li>
-    <% end %>
-  </ul>
-</nav>
-</header>
-<main></main>
-<footer>Copyright &copy; 2015 WDI Project3 Raneâ˜‚ - Rane Gowan</footer>;T:metadata{	:dependencieso:Set:
-@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"nfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/application.html;TT:charsetI"
-utf-8;F:digest"%üÌ˜£ë³ô&„`ÏWØ!üf]ó§¡a²–ñb]:lengthiÚ:integrityI"9sha-256-/MyYo+uz9CaEEWDPV9gh/BRmAgddFPOnoR5hspbxYl0=;T:dependencies_digest"%Ù ‘â|úCÈ4Ä$Ÿ¢-›ÂRÅ“§•ÌÍò*©ª:idI"E4e68d149347d95e1581d36605cc3eff325119d234ce58a0f459f5323348f5c91;F:
-mtimel+&WlU

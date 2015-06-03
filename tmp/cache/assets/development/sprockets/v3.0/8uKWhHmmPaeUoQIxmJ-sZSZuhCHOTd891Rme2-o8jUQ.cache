@@ -1,7 +1,0 @@
-{:uriI"¸file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/homepage/index.html?type=text/html&id=519df44ffe73479e5be4f7d39aa369cbecf9253a271c89d7b4e6dff91a693365:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/homepage/index.html;T:	nameI"templates/homepage/index;T:logical_pathI""templates/homepage/index.html;T:content_typeI"text/html;T:sourceI"ÿ<h1>Sole Selectorâ„¢</h1>
-<a href="/users/auth/facebook">Sign in with Facebook</a>
-<button id="facebook" onclick="location.href='/users/auth/facebook'">Sign in with Facebook</button>
-<footer>Copyright &copy; 2015 WDI Project3 Raneâ˜‚ - Rane Gowan</footer>;T:metadata{	:dependencieso:Set:
-@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/homepage/index.html;TT:charsetI"
-utf-8;F:digest"%±æsªÛ$¶6€="ów®³ğ¤àøwªù[ç#•',Bˆ:lengthiÿ:integrityI"9sha-256-seZzqtsktjaAPSLzd66z8KTg+Heq+VvnjSOVJyxCBYg=;T:dependencies_digest"%‡JyêEù¦‹£/i‡€Ò ©mŒã¬hlÕÚ:idI"E519df44ffe73479e5be4f7d39aa369cbecf9253a271c89d7b4e6dff91a693365;F:
-mtimel+‡„mU

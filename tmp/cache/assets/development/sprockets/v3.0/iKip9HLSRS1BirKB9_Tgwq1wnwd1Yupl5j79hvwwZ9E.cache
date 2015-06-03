@@ -1,29 +1,0 @@
-{:uriI"∆file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/Shoe_Selector/app/assets/javascripts/templates/products/index.html?type=text/html&id=7357b9f6fe7f0d56dd243313ef82b13e3d36e9d3bd9e30bb6c648bb2a03e31eb:ET:load_pathI"S/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/Shoe_Selector/app/assets/javascripts;F:filenameI"q/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/Shoe_Selector/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"d<h1>Listing Products</h1>
-
-<table id="products-table">
-  <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Image</th>
-    <th>Description</th>
-    <th>Url</th>
-    <th>Retail Price</th>
-  </tr>
-
-  <tbody>
-    <% _.each(products, function(product){ %>
-      <tr>
-        <td><%= product.get("id") %> 
-        <td><%= product.get("name") %></td>
-        <td><img src="<%= product.get("image_url_large") %>" width="100"></td>
-        <td><%= product.get("description") %></td>
-        <td><%= product.get("url") %></td>
-        <td><%= product.get("price_retail") %></td>
-      </tr>
-    <% }); %>
-  </tbody>
-
-</table>;T:metadata{	:dependencieso:Set:
-@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"file-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/Shoe_Selector/app/assets/javascripts/templates/products/index.html;TT:charsetI"
-utf-8;F:digest"%˙	EåKk{ÇÂ¥¸èÁµg)∏TiX£rS≈µï≥m®u:lengthid:integrityI"9sha-256-+glFjEtre4IB5bT8j+e1Zym4VGlYo3JTxbWVs20RqHU=;T:dependencies_digest"%äˆ÷(lr{ñÓKÓ3^—y=∑ı~må4Êö„Ã—’—]:idI"E7357b9f6fe7f0d56dd243313ef82b13e3d36e9d3bd9e30bb6c648bb2a03e31eb;F:
-mtimel+6hU

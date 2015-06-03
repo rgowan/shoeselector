@@ -1,20 +1,0 @@
-{:uriI"∏file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html?type=text/html&id=7fe6bbbac6be28c0a6b1c0e51182fe5b773c07591b664c4ec6208d954148e057:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"c/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;T:	nameI"templates/products/index;T:logical_pathI""templates/products/index.html;T:content_typeI"text/html;T:sourceI"ù<h1>Shoes</h1>
-<div class="selection">
-<ul class="column" id="dislike">Dislike</ul>
-  <ul class="column">
-    <li>
-      <ul>
-      <% _.each(products, function(product){ %>
-        <li><img src="<%= product.image_url_large %>" width="350"></li>
-      <% }); %>
-      </ul>
-    </li>
-  </ul>
-  <ul class="column" id="like">Likejhij</ul>
-</div>
-<br>
-<button id="like">‚úî</button>
-<button id="dislike">‚úò</button>;T:metadata{	:dependencieso:Set:
-@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"qfile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/products/index.html;TT:charsetI"
-utf-8;F:digest"%ˆ˘‹ı_<DCK…t"#)@O“©¨/XÁπDèµ|ù¥:lengthiù:integrityI"9sha-256-9vnc9V88RENLyXQiDCMpQE/SHamsL1jnuUSPGLV8nbQ=;T:dependencies_digest"%'^A‹JMÃ∫ﬂˇ≈îgT˙Ax€*—;≈ª∏{ÛO+çæ:idI"E7fe6bbbac6be28c0a6b1c0e51182fe5b773c07591b664c4ec6208d954148e057;F:
-mtimel+rzmU

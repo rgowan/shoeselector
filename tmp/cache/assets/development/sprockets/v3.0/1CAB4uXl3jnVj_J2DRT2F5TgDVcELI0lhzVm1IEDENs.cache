@@ -1,12 +1,0 @@
-{:uriI"∂file:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/wishes/index.html?type=text/html&id=f9715745f28da248bcfe980f7d2b15aae19ddded038f099e7be12aed7448ba8e:ET:load_pathI"E/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts;F:filenameI"a/Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/wishes/index.html;T:	nameI"templates/wishes/index;T:logical_pathI" templates/wishes/index.html;T:content_typeI"text/html;T:sourceI"<h1>Wishlist</h1>
-
-<% _.each(wishes, function(wish){ %>
-  <li><img src="<%= product.image_url_large %>" width="200"></li>
-  <li><%= product.name %></li>
-  <li><%= product.description %></li>
-  <li><%= product.price_retail %></li>
-  <li><%= product.url %></li>
-<% }); %>;T:metadata{	:dependencieso:Set:
-@hash{	I"environment-version;TTI"environment-paths;TTI"2processors:type=text/html&file_type=text/html;TTI"ofile-digest:///Users/rane_00/Desktop/WDI12/WDI_PROJECT3/app/assets/javascripts/templates/wishes/index.html;TT:charsetI"
-utf-8;F:digest"%C¶Å°s_ër¸dj'Oè*Òõ3-ÍÍ6áä*9çL:lengthi:integrityI"9sha-256-Q6aBF6FzX5Fy/GQTaicUT48q8ZszLeoB6jaHiio5jUw=;T:dependencies_digest"% eô¥Ωo&ªJÃc”é|&,i¯sn!)ï¨◊ƒ0Å@m{:idI"Ef9715745f28da248bcfe980f7d2b15aae19ddded038f099e7be12aed7448ba8e;F:
-mtimel+HTlU
