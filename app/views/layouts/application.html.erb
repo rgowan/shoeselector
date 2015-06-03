@@ -9,7 +9,23 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+  <header>
+  <% if current_user %>
+    <nav>
+      <ul>
+        <li class="home"><a href="/#"><img src="/assets/home.icon.png", width="30"></a></li>
+        <li><a class="link" href="/#products">Shoes</a></li>
+        <li><img src="/assets/topbar-logo.png", width="50"></li>
+        <li><a class="link" href="/#wishes">Wishlist</a></li>
+        <li class="account">
+          <%= link_to destroy_user_session_path, method: :delete do %> 
+            <img src="/assets/account_icon.png", width="30">
+          <% end %>
+        </li>
+      </ul>
+    </nav>
+  <% end %>
+  </header>
   <%= yield %>
 </body>
 </html>
