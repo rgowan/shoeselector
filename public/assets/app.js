@@ -1,0 +1,1 @@
+define(["jquery","jquery_ujs","underscore","backbone","router","lib/modules/bourbon"],function(e,i,n,r,u,o){var t=function(){o(),u.initialize()};return{initialize:t}});
