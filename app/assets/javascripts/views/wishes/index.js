@@ -24,20 +24,22 @@ define([
       },
 
       events: {
-        "click .remove"  : "removeWish",
+        "click .remove-wish"  : "removeWish",
         "click .buy-now" : "showLoader"
       },
 
       showLoader: function(){ $("#overlay").show() },
 
-      removeWish: function(){
+      removeWish: function(event){
+        var wish_id = $(event.currentTarget).data("id")
+        event.preventDefault();
         var self = this;
         $.ajax({
           type: "DELETE",
-          dataType: "JSON",
-          url: "wishes/"+self.id+"/dislike"
-        }).done(function(data, response){
-          
+          url: "wishes/"+wish_id+"/dislike",
+          data: { _method: 'delete' }
+        }).done(function(data){
+          console.log(data)
         })
       }
     });
