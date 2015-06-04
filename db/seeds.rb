@@ -12,7 +12,7 @@ response = HTTParty.get(popshops_url, query: {
 
   # Optional
   results_per_page: 100,
-  keyword: "nike",
+  keyword: "Nike",
   category: 25245
   })
 
