@@ -38,9 +38,7 @@ define([
         var template = _.template(HomepageTemplate);
         this.$el.html(template)
         $('.swipe').slick({
-          swipe: true,
-          autoplay: true,
-          autoplaySpeed: 4000
+          swipe: true
         });
         $('.logo-slide').slick({
           infinite: true,

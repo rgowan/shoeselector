@@ -32,8 +32,18 @@ section.info-slider {
   margin-top: -10px;
   background: #f5f5f5;
 
-  img{
+  img.drop {
     margin: 0 auto;
+    width: 60px;
+  }
+
+  .swipe {
+    div {
+      img {
+        width: 100%;
+      }
+    }
+    
   }
 
   .drop {
@@ -75,10 +85,11 @@ footer {
   }  
   h4 {
     margin: 0;
+    margin-top: 25px;
     padding: 0;
     color: #fff;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
   }
   ul.dev-info li a {
     text-decoration: none;
