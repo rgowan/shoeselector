@@ -24,8 +24,11 @@ define([
       },
 
       events: {
-        "click .remove"  : "removeWish"
+        "click .remove"  : "removeWish",
+        "click .buy-now" : "showLoader"
       },
+
+      showLoader: function(){ $("#overlay").show() },
 
       removeWish: function(){
         var self = this;

@@ -1,10 +1,14 @@
+<div id="overlay" style="width:100%;height:100%; background-color: rgba(140,140,140,.4); position: absolute; display: none ">
+  <img src="/assets/loader.gif" />
+  <h3>We are redirtecting you...</h3>
+</div>
 <h2>Wishlist</h2>
   <% _.each(wishes, function(wish){ %>
     <ul class="wish-container">
       <li><img src="<%= wish.get("image_url_large") %>" width="150"></li>
       <li><%= wish.get("name") %></li>
       <li>Retail Price: £<%= wish.get("price_retail") %></li>
-      <li><a href="<%= wish.get("url") %>">Buy Now</a></li>
+      <li><a class="buy-now" href="<%= wish.get("url") %>">Buy Now</a></li>
       <button class="remove" data-id="<%= wish.get("id") %>">Delete</button>
     </ul>
   <% }); %>
