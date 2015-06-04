@@ -44,7 +44,9 @@ define([
           infinite: true,
           speed: 300,
           fade: true,
-          cssEase: 'linear'
+          cssEase: 'linear',
+          autoplay: true,
+          autoplaySpeed: 2500
         });
       }
     });

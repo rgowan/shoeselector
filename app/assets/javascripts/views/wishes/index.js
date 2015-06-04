@@ -31,14 +31,16 @@ define([
       showLoader: function(){ $("#overlay").show() },
 
       removeWish: function(event){
-        var wish_id = $(event.currentTarget).data("id")
+        var wish    = $(event.currentTarget);
+        var wish_id = wish.data("id")
         event.preventDefault();
         var self = this;
         $.ajax({
-          type: "DELETE",
-          url: "wishes/"+wish_id+"/dislike",
+          type: "PUT",
+          url: "products/"+wish_id+"/dislike",
           data: { _method: 'delete' }
         }).done(function(data){
+          wish.parent().parent().fadeOut();
           console.log(data)
         })
       }

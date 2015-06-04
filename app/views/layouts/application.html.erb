@@ -14,20 +14,18 @@
     <header>
       <nav>
         <ul>
-          <li class="topbar-logo">Shoe Selector</li>
-          <li><a class="link" href="/#products">Shoes</a></li>
-          <li class="user-image"><%= image_tag current_user.image, width:"45" %></li>
-          <li><a class="link" href="/#wishes">Wishlist</a></li>
+          <li class="shoes"><a class="link" href="/#products"><%= image_tag("search-icon.png") %></a></li>
+          <li class="user-image"><a class="link" href="/#wishes"><%= image_tag current_user.image %></a></li>
           <li class="account">
             <%= link_to destroy_user_session_path, method: :delete do %> 
-              <img src="/assets/menu.png", width="20">
+              <img src="/assets/log-out-icon.png">
             <% end %>
           </li>
         </ul>
       </nav>
+    <div class="curve-bottom"></div>
     </header>
   <% end %>
-  <div class="curve-bottom"></div>
   <%= yield %>
 </body>
 </html>
