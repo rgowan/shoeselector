@@ -24,11 +24,11 @@ define([
       },
 
       events: {
-        "click .remove-wish"  : "removeWish",
-        "click .buy-now" : "showLoader"
+        "click .remove-wish"  : "removeWish"
+        // "click .buy-now" : "showLoader"
       },
 
-      showLoader: function(){ $("#overlay").show() },
+      // showLoader: function(){ $("#overlay").show() },
 
       removeWish: function(event){
         var wish    = $(event.currentTarget);
