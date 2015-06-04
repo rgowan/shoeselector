@@ -3,13 +3,13 @@ header nav ul li {
 }
 
 header nav ul li.account {
-  margin-top: 22px;
+  margin-top: 14px;
   float: right;
   margin-right: 10px;
 }
 
 header nav ul li.topbar-logo{
-  margin-top: 12px;
+  margin-top: 6px;
   margin-left: 10px;
   font-weight: 700;
   float: left;
@@ -25,8 +25,10 @@ header nav ul li a {
 }
 
 header {
-  background-color: #222;
+  background-color: #FF614D;
   height: 65px;
+  border-bottom: 2px solid #f5f5f5;
+  border-radius: 0 0 30% 30%;
 }
 
  header nav ul {
@@ -39,6 +41,6 @@ header {
   margin-left: 10px; 
   margin-right: 10px; 
   margin-top: 9px;
-  border: 2px solid #f5f5f5;
+  border: 2.5px solid #f5f5f5;
   border-radius: 100px;
  }
