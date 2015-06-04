@@ -78,7 +78,6 @@
             self.nextPage()
           } else {
             $("#tinderslide ul li:last-child").remove();
-            console.log("don't need to reload");
           }
         });
       }

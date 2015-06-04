@@ -15,11 +15,11 @@
         <ul>
           <li class="topbar-logo">Shoe Selector</li>
           <li><a class="link" href="/#products">Shoes</a></li>
-          <li class="user-image"><%= image_tag current_user.image, width:"40" %></li>
+          <li class="user-image"><%= image_tag current_user.image, width:"45" %></li>
           <li><a class="link" href="/#wishes">Wishlist</a></li>
           <li class="account">
             <%= link_to destroy_user_session_path, method: :delete do %> 
-              <img src="/assets/menu.png", width="25">
+              <img src="/assets/menu.png", width="20">
             <% end %>
           </li>
         </ul>

@@ -1,9 +1,10 @@
 <h2>Wishlist</h2>
-<% _.each(wishes, function(wish){ %>
-  <li><img src="<%= wish.get("image_url_large") %>" width="350"></li>
-  <li><%= wish.get("name") %></li>
-  <li><%= wish.get("description") %></li>
-  <li>Retail Price: £<%= wish.get("price_retail") %></li>
-  <li><a href="<%= wish.get("url") %>">Buy Now</a></li>
-  <button class="remove" data-id="<%= wish.get("id") %>">✘</button>
-<% }); %>
+  <% _.each(wishes, function(wish){ %>
+    <ul class="wish-container">
+      <li><img src="<%= wish.get("image_url_large") %>" width="150"></li>
+      <li><%= wish.get("name") %></li>
+      <li>Retail Price: £<%= wish.get("price_retail") %></li>
+      <li><a href="<%= wish.get("url") %>">Buy Now</a></li>
+      <button class="remove" data-id="<%= wish.get("id") %>">Delete</button>
+    </ul>
+  <% }); %>

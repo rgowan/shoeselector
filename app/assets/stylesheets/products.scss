@@ -24,9 +24,11 @@ div.selection ul li img {
 }
 
 div#tinderslide ul li img {
-  margin-top: 50px;
+  max-height: 310px;
+  margin-top: 30px;
   margin-bottom: 20px;
   border: 2px solid #f5f5f5;
+  border-bottom: 10px solid #f5f5f5;
   border-radius: 15px;
 }
 
