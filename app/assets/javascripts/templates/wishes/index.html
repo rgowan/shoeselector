@@ -8,7 +8,7 @@
       <li><img src="<%= wish.get("image_url_large") %>" width="150"></li>
       <li><%= wish.get("name") %></li>
       <li>Retail Price: £<%= wish.get("price_retail") %></li>
-      <li><a class="buy-now" href="<%= wish.get("url") %>">Buy Now</a></li>
+      <li><a class="buy-now" href="<%= wish.get("url") %>" target="_blank">Buy Now</a></li>
       <button class="remove" data-id="<%= wish.get("id") %>">Delete</button>
     </ul>
   <% }); %>
