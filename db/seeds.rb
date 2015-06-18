@@ -21,12 +21,12 @@ products = response['results']['products']['product'].each do |product|
 
     options = {
       name: offer['name'],
-      image_url_large: offer['image_url_large'],
       description: offer['description'],
       price_retail: offer['price_retail'],
-      url: offer['url']
+      url: offer['url'],
+      remote_image_url_large_url: offer['image_url_large']
     }
 
-    Product.create!(options)
+    product = Product.create!(options)
   end
 end
