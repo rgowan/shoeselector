@@ -15,6 +15,7 @@ gem 'neat', '1.7.2'
 gem 'bitters', '1.0.0'
 gem 'refills', '0.1.0'
 gem 'fog', '1.29.0'
+gem 'carrierwave', '0.10.0'
 
 gem 'rails', '4.2.1'
 gem 'pg', '0.18.2'
