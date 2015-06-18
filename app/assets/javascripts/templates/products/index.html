@@ -4,7 +4,7 @@
       <% _.each(products, function(product){ %>
         <li class="panel_<%= product.id %>" data-id="<%= product.id %>">
           <div class="img">
-            <img src="<%= product.image_url_large %>" width="350">
+            <img src="<%= product.shoe_image.size %>">
           </div>
         </li>
       <% }); %>
