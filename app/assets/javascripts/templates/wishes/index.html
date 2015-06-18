@@ -5,7 +5,7 @@
 <h2>Wishlist</h2>
   <% _.each(wishes, function(wish){ %>
     <ul class="wish-container">
-      <li><img class="wishlist-image" src="<%= wish.get("image_url_large") %>" width="150"></li>
+      <li><img class="wishlist-image" src="<%= wish.get("image_url_thumb") %>" width="150"></li>
       <li><p><%= wish.get("name") %></p></li>
       <li><button><a class="buy-now" href="<%= wish.get("url") %>" target="_blank">Buy Now <span>£<%= wish.get("price_retail") %></span></a></button></li>
       <li><img class="remove-wish" src="/assets/bin-icon.png" width="40" data-id="<%= wish.id %>"></li>

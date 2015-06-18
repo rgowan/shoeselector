@@ -4,7 +4,11 @@
       <% _.each(products, function(product){ %>
         <li class="panel_<%= product.id %>" data-id="<%= product.id %>">
           <div class="img">
-          <img src="<%= product.image_url_thumb %>">
+            <img src="<%= product.image_url_thumb %>">
+            <div class="ratings">
+                <label><%= product.likes %></label>
+                <label><%= product.dislikes %></label>
+            </div>
           </div>
         </li>
       <% }); %>
