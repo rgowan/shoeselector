@@ -5,12 +5,6 @@
         <li class="panel_<%= product.id %>" data-id="<%= product.id %>">
           <div class="img">
             <img src="<%= product.image_url_thumb %>">
-            <div class="like">
-                <label><%= product.likes %></label>
-            </div>
-            <div class="dislike">
-                <label><%= product.dislikes %></label>
-            </div>
           </div>
         </li>
       <% }); %>
@@ -20,6 +14,6 @@
 
 <!-- jTinder trigger by buttons  -->
 <div class="actions">
-<img src="/assets/cross.png", width="80", class="dislike">
-<img src="/assets/tick.png", width="80", class="like">
+  <img src="/assets/cross.png", width="80", class="dislike">
+  <img src="/assets/tick.png", width="80", class="like">
 </div>
