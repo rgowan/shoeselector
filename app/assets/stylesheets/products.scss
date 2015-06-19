@@ -17,13 +17,14 @@ div#tinderslide ul {
       height: 310px;
       box-sizing: border-box;
       border: 2px solid #f5f5f5;
-      border-bottom: 5px solid #f5f5f5;
+      border-bottom: 10px solid #f5f5f5;
       border-radius: 15px;
     }
   }
 }
 
 div.actions {
+  z-index: 2;
   background-color: #f5f5f5;
   border-radius: 30px;
   padding: 10px;
@@ -35,22 +36,23 @@ div.actions {
   }
 }
 
+div.like label{
+  float: right;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 30px;
+  border-radius: 0 30px 30px 0;
+}
+
+div.dislike label{
+  float: left;
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 30px 0 0 30px;
+}
+
 div.container {
   min-height:362px;
   background: #fff;
 }
 
-// div.ratings {
-//   background-color: #f5f5f5;
-//   margin: 0 auto;
-//   width: 350px;
-//   border-radius: 0 0 15px 15px;
-
-//   label {
-//   }
-// }
-
-div.ratings label {
-  margin: 0 5px;
-  
-}
