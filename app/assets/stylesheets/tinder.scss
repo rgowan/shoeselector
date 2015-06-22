@@ -2,7 +2,15 @@
   display: block;
 }
 #tinderslide ul li {
-  display: none;
+  display: block;
+  position: absolute;
+  height: 310px;
+  width: 350px;
+  box-sizing: border-box;
+  border: 2px solid #f4f4f4;
+  border-bottom: 10px solid #f4f4f4;
+  border-radius: 15px;
+  left: 20px;
 }
 
 
