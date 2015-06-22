@@ -108,18 +108,31 @@ footer {
     }
   }
   section.welcome {
-    height: 550px;
+    height: 875px;
 
     h1 {
       color: #fff;
-      font-size: 75px;
+      font-size: 110px;
       padding: 15px 0;
-      margin-top: -50px;
+      margin-top: -90px;
     }
 
     img.homepage-logo {
       margin: 0 auto;
-      width: 250px;
+      width: 350px;
+    }
+
+    section.info-slider {
+      margin: 0 auto;
+      height: 900px;
+      margin-bottom: -50px;
+      margin-top: -10px;
+      background: #f5f5f5;
+
+      img.drop {
+        margin: 0 auto;
+        width: 60px;
+      }
     }
   }
 }
