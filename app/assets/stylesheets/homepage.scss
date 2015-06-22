@@ -97,3 +97,29 @@ footer {
     color: #f5f5f5;
   }
 }
+
+@media (min-width:768px) {
+  .swipe {
+    div {
+      img {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+  section.welcome {
+    height: 550px;
+
+    h1 {
+      color: #fff;
+      font-size: 75px;
+      padding: 15px 0;
+      margin-top: -50px;
+    }
+
+    img.homepage-logo {
+      margin: 0 auto;
+      width: 250px;
+    }
+  }
+}
