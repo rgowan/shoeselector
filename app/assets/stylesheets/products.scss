@@ -96,7 +96,7 @@ div.container {
 
 }
 
-@media (min-width:300px max-width: 450px) {
+@media (min-width:300px, max-width: 450px) {
   div#tinderslide ul {
     padding: 30px 0;
     height: 370px;
