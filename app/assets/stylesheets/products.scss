@@ -98,7 +98,7 @@ div.container {
 
 @media only screen 
 and (min-device-width : 320px) 
-and (max-device-width : 568px) {
+and (max-device-width : 475px) {
   div#tinderslide ul {
     padding: 30px 0;
     height: 370px;
@@ -118,13 +118,13 @@ and (max-device-width : 568px) {
   }
 
   div.actions {
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: #f4f4f4;
     border-radius: 30px;
     padding: 10px;
     border: 2px solid #f4f4f4;
     max-width: 190px;
-    height: 150px;
+    height: 120px;
     img {
       margin-top: 10px;
       padding: 2px;
