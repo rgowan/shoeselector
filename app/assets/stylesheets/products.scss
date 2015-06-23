@@ -130,4 +130,9 @@ and (max-device-width : 350px) {
       width: 80px;
     }
   }
+
+  div.container {
+    min-height:275px;
+    background: #fff;
+  }
 }
