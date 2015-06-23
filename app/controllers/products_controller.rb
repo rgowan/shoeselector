@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   def index
-    @products = Product.all.page(params[:page]).per(50) 
+    @products = Product.all.page(params[:page]).per(30) 
     render json: @products, root: false
   end
 
