@@ -137,7 +137,9 @@ footer {
   }
 }
 
-@media (min-width:300px) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
   section.welcome {
     height: 400px;
   }
