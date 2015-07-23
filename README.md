@@ -1,3 +1,12 @@
+<style type="text/css">
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+</style>
+
+
 # WDI12 Project 3 - Shoe Selector
 
 In the final project of my Web Development Immersive course, for the first time we were given full autonomy to decide the idea and the tech we wanted to use. I really wanted to identify a problem I had in my life and create a solution to fix this problem.
