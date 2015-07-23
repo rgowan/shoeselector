@@ -1,4 +1,4 @@
-<style type="text/css">
+<style type="css">
 img {
     display: block;
     margin-left: auto;
