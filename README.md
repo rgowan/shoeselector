@@ -1,10 +1,9 @@
-<link type="text/css">
+<style type="text/css">
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
-</link>
+</style>
 
 
 # WDI12 Project 3 - Shoe Selector
