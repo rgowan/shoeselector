@@ -42,7 +42,7 @@ Shoe Selector is a mobile-first Ruby on Rails app with a Postgres database, usin
 
 <img src="http://i.imgur.com/V3GsZ1l.png" width="400">
 
-###### Users are able to review and compare all the products they have liked with the ability to remove any they don’t want anymore. Clicking on the button which displays the price will redirect the user to an online outlet where they can purchase the product.
+###### Users are able to review and compare all the products they have liked with the ability to remove any they don’t want anymore. Clicking on the 'buy now' button will redirect the user to an online outlet where they can purchase the product.
 
 <img src="http://i.imgur.com/qNKoBol.png" width="400">
 
