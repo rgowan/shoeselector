@@ -1,11 +1,3 @@
-<!--<style type="text/css">-->
-<!--img {-->
-<!--    display: block;-->
-<!--    margin: 0 auto;-->
-<!--}-->
-<!--</style>-->
-
-
 # WDI12 Project 3 - Shoe Selector
 
 In the final project of my Web Development Immersive course, for the first time we were given full autonomy to decide the idea and the tech we wanted to use. I really wanted to identify a problem I had in my life and create a solution to fix this problem.
@@ -14,7 +6,6 @@ I am extremely into fashion mostly in shoes and spend a coupe of hours a week br
 
 #####[Visit Website](http://shoeselector.herokuapp.com/) for best viewing quality, please access on a mobile or a small web browser window
 
-<!--![image](http://i.imgur.com/olYcuEw.png)-->
 <img src="http://i.imgur.com/olYcuEw.png" width="400">
 
 Shoe Selector is a mobile-first Ruby on Rails app with a Postgres database, using Backbone.js for the front-end.
