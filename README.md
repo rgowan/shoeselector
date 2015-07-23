@@ -1,9 +1,9 @@
-<style type="text/css">
-img {
-    display: block;
-    margin: 0 auto;
-}
-</style>
+<!--<style type="text/css">-->
+<!--img {-->
+<!--    display: block;-->
+<!--    margin: 0 auto;-->
+<!--}-->
+<!--</style>-->
 
 
 # WDI12 Project 3 - Shoe Selector
@@ -45,17 +45,14 @@ Shoe Selector is a mobile-first Ruby on Rails app with a Postgres database, usin
 
 ###### Users are able to sign in via Facebook and are shown one product at a time with the option to ‘like’ or ‘dislike’ the product, this decision can either be made by using the buttons or swiping on the screen.
 
-<!--![image](http://i.imgur.com/mcWhMbX.png)-->
 <img src="http://i.imgur.com/mcWhMbX.png" width="400">
 
 ###### Once the decision is made, the next product appears and the process is repeated. All liked projects are saved into the users wishlist, where they are given more information about the product. 
 
-<!--![image](http://i.imgur.com/V3GsZ1l.png)-->
 <img src="http://i.imgur.com/V3GsZ1l.png" width="400">
 
 ###### Users are able to review and compare all the products they have liked with the ability to remove any they don’t want anymore. Clicking on the button which displays the price will redirect the user to an online outlet where they can purchase the product.
 
-<!--![image](http://i.imgur.com/qNKoBol.png)-->
 <img src="http://i.imgur.com/qNKoBol.png" width="400">
 
 ---
