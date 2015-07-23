@@ -4,7 +4,7 @@ In the final project of my Web Development Immersive course, for the first time 
 
 I am extremely into fashion mostly in shoes and spend a coupe of hours a week browsing online retailers to find new products I might like. I find the process of doing this quite painful. You are greeted with hundreds of different products at once with sometimes 10+ pages. I really wanted to create a different way people could browse through products but in a simpler, less painful way.
 
-#####[Visit Website](http://www.shoeselector.herokuapp.com) for best viewing quality, please access on a mobile or a small web browser window
+#####[Visit Website](http://shoeselector.herokuapp.com/) for best viewing quality, please access on a mobile or a small web browser window
 
 <!--![image](http://i.imgur.com/olYcuEw.png)-->
 <img src="http://i.imgur.com/olYcuEw.png" width="400">
