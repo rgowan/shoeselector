@@ -1,6 +1,8 @@
 <style type="text/css">
  img {
-  margin: 0 auto;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
  }
 </style>
 
