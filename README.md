@@ -6,7 +6,7 @@ I am extremely into fashion mostly in shoes and spend a coupe of hours a week br
 
 #####[Visit Website](http://www.shoeselector.herokuapp.com) for best viewing quality, please access on a mobile or a small web browser window
 
-![homepage](http://i.imgur.com/olYcuEw.png =100x)
+![image](http://i.imgur.com/olYcuEw.png =100x)
 
 Shoe Selector is a mobile-first Ruby on Rails app with a Postgres database, using Backbone.js for the front-end.
 
@@ -36,15 +36,15 @@ Shoe Selector is a mobile-first Ruby on Rails app with a Postgres database, usin
 
 ###### Users are able to sign in via Facebook and are shown one product at a time with the option to ‘like’ or ‘dislike’ the product, this decision can either be made by using the buttons or swiping on the screen.
 
-![search](http://i.imgur.com/mcWhMbX.png =100x)
+![image](http://i.imgur.com/mcWhMbX.png =100x)
 
 ###### Once the decision is made, the next product appears and the process is repeated. All liked projects are saved into the users wishlist, where they are given more information about the product. 
 
-![wishlist](http://i.imgur.com/V3GsZ1l.png =100x)
+![image](http://i.imgur.com/V3GsZ1l.png =100x)
 
 ###### Users are able to review and compare all the products they have liked with the ability to remove any they don’t want anymore. Clicking on the button which displays the price will redirect the user to an online outlet where they can purchase the product.
 
-![redirect](http://i.imgur.com/qNKoBol.png =100x)
+![image](http://i.imgur.com/qNKoBol.png =100x)
 
 ---
 
