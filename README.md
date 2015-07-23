@@ -7,7 +7,7 @@ I am extremely into fashion mostly in shoes and spend a coupe of hours a week br
 #####[Visit Website](http://www.shoeselector.herokuapp.com) for best viewing quality, please access on a mobile or a small web browser window
 
 <!--![image](http://i.imgur.com/olYcuEw.png)-->
-<img src="http://i.imgur.com/olYcuEw.png" width="100">
+<img src="http://i.imgur.com/olYcuEw.png" width="500">
 
 Shoe Selector is a mobile-first Ruby on Rails app with a Postgres database, using Backbone.js for the front-end.
 
