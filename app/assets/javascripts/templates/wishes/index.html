@@ -1,9 +1,13 @@
-<h1>Wishlist</h1>
-<% _.each(wishes, function(wish){ %>
-  <li><img src="<%= wish.get("image_url_large") %>" width="350"></li>
-  <li><%= wish.get("name") %></li>
-  <li><%= wish.get("description") %></li>
-  <li>Retail Price: £<%= wish.get("price_retail") %></li>
-  <li><a href="<%= wish.get("url") %>">Buy Now</a></li>
-  <button class="remove" data-id="<%= wish.get("id") %>">✘</button>
-<% }); %>
+<div id="overlay" style="width:100%;height:100%; background-color: rgba(140,140,140,.4); position: absolute; display: none ">
+  <img src="/assets/loader.gif" />
+  <h3>We are redirtecting you...</h3>
+</div>
+<h2>Wishlist</h2>
+  <% _.each(wishes, function(wish){ %>
+    <ul class="wish-container">
+      <li><img class="wishlist-image" src="<%= wish.get("image_url_thumb") %>" width="150"></li>
+      <li><p><%= wish.get("name") %></p></li>
+      <li><button><a class="buy-now" href="<%= wish.get("url") %>" target="_blank">Buy Now <span>£<%= wish.get("price_retail") %></span></a></button></li>
+      <li><img class="remove-wish" src="/assets/bin-icon.png" width="40" data-id="<%= wish.id %>"></li>
+    </ul>
+  <% }); %>

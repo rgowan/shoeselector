@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   def index
-    @products = Product.all.page(params[:page]).per(10) 
+    @products = Product.all.page(params[:page]).per(30) 
     render json: @products, root: false
   end
 
@@ -33,6 +33,6 @@ class ProductsController < ApplicationController
   end
 
   def product_params
-    params.require(:product).permit(:name, :image_url_large, :description, :url, :price_retail)
+    params.require(:product).permit(:name, :image_url_large, :description, :url, :price_retail, :remote_image_url_large_url)
   end
 end

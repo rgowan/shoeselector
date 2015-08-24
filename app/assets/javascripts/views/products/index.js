@@ -23,7 +23,7 @@
       },
       render: function(data, prevEl){
         var template = _.template(ProductsTemplate);
-        this.$el.html(template({products: data})).hide().fadeIn("fast");
+        this.$el.html(template({products: data}));
         this.tinder();
       },
 
@@ -78,7 +78,6 @@
             self.nextPage()
           } else {
             $("#tinderslide ul li:last-child").remove();
-            console.log("don't need to reload");
           }
         });
       }

@@ -13,7 +13,9 @@ define([
         url             : '',
         price_retail    : '',
         created_at      : '',
-        updated_at      : ''
+        updated_at      : '',
+        likes           : 0,
+        dislikes        : 0
       }
     });
   });

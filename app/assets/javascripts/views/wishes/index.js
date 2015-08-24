@@ -24,11 +24,25 @@ define([
       },
 
       events: {
-        "click .remove"  : "removeWish"
+        "click .remove-wish"  : "removeWish"
+        // "click .buy-now" : "showLoader"
       },
 
-      removeWish: function(){
-        this.onDislike()
+      // showLoader: function(){ $("#overlay").show() },
+
+      removeWish: function(event){
+        var wish    = $(event.currentTarget);
+        var wish_id = wish.data("id")
+        event.preventDefault();
+        var self = this;
+        $.ajax({
+          type: "PUT",
+          url: "products/"+wish_id+"/dislike",
+          data: { _method: 'delete' }
+        }).done(function(data){
+          wish.parent().parent().fadeOut();
+          console.log(data)
+        })
       }
     });
 

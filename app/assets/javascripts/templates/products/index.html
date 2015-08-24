@@ -1,14 +1,11 @@
-<h1>Shoes</h1>
-<div class="container">
-  <div id="tinderslide">
+<div class="container" style="min-height:340px">
+  <div id="tinderslide" >
     <ul>
       <% _.each(products, function(product){ %>
         <li class="panel_<%= product.id %>" data-id="<%= product.id %>">
           <div class="img">
-            <img src="<%= product.image_url_large %>" width="350">
+            <img src="<%= product.image_url_thumb %>">
           </div>
-          <div class="like"></div>
-          <div class="dislike"></div>
         </li>
       <% }); %>
     </ul>
@@ -17,6 +14,7 @@
 
 <!-- jTinder trigger by buttons  -->
 <div class="actions">
-  <button class="dislike" id="dislike">✘</button> 
-  <button class="like" id="like">✔</button>
+
+<img src="/assets/cross.png", class="dislike">
+<img src="/assets/tick.png", class="like">
 </div>

@@ -1,129 +1,66 @@
-header.navigation {
-  background-color: $navigation-background;
-  border-bottom: 1px solid darken($navigation-background, 10);
-  min-height: $navigation-height;
-  width: 100%;
-  z-index: 999;
-}
+header {
+  background-color: #FF614D;
+  height: 65px;
+  position: relative;
+  z-index: 2;
+  nav {
+    z-index: 2;
+    position: relative;
 
-.navigation-wrapper {
-  @include clearfix;
-  @include outer-container;
-  position: fixed;
-  // top: 0;
-  // left: 0;
-  // z-index: 9999;
-  width: 100%;
-  // height: 50px;
-  background-color: $navigation-background;
-}
+    ul {
+      padding: 0px;
+      margin: 0 auto;
 
-.logo {
-  float: left;
-  max-height: $navigation-height;
-  padding-left: $navigation-padding;
-  padding-right: 2em;
+      li {
+        display: inline-block;
 
-  img {
-    max-height: $navigation-height;
-    padding: 0.8em 0;
-  }
-}
+        &.shoes, &.account {
+          margin-top: 18px;
+          
+          img {
+            max-width: 30px;
+            max-height: 30px;
+          }
+        }
 
-// Mobile View
-.navigation-menu-button {
-  color: $navigation-color;
-  display: block;
-  float: right;
-  font-weight: 700;
-  line-height: $navigation-height;
-  margin: 0;
-  padding-right: 1em;
-  text-transform: uppercase;
+        &.shoes {
+          float: left;
+          margin-left: 14px;
+        }
 
-  @include media ($horizontal-bar-mode) {
-    display: none;
-  }
+        &.account {
+          float: right;
+          margin-right: 14px;
+        }
 
-  &:focus,
-  &:hover {
-    color: $navigation-color-hover;
-  }
-}
+        &.user-image img {
+          margin: 0 auto;
+          margin-top: 10px;
+          border: 3px solid #f5f5f5;
+          border-radius: 100px;
+          width: 50px;
+          height: 50px;
+        }
 
-// Nav menu
-
-nav {
-  float: none;
-  min-height: $navigation-height;
-  z-index: 9999999;
-
-  @include media ($horizontal-bar-mode) {
-    float: left;
-  }
-}
-
-ul.navigation-menu {
-  -webkit-transform-style: preserve-3d; 
-// stop webkit flicker
-clear: both;
-display: none;
-margin: 0 auto;
-overflow: visible;
-padding: 0;
-width: 100%;
-z-index: 9999;
-
-&.show {
-  display: block;
-}
-
-@include media ($horizontal-bar-mode) {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-}
-
-
-// The nav items
-
-ul li.nav-link {
-  background: $navigation-background;
-  display: block;
-  line-height: $navigation-height;
-  overflow: hidden;
-  padding-right: 0.8em;
-  text-align: right;
-  width: 100%;
-  z-index: 9999;
-
-  @include media ($horizontal-bar-mode) {
-    background: transparent;
-    display: inline;
-    line-height: $navigation-height;
-    text-decoration: none;
-    width: auto;
-  }
-
-  a {
-    color: $navigation-color;
-    display: inline-block;
-    font-weight: 400;
-    text-decoration: none;
-
-    @include media ($horizontal-bar-mode) {
-      padding-right: 1em;
-    }
-
-    &:focus,
-    &:hover {
-      color: $navigation-color-hover;
+        a {
+          text-decoration: none;
+          color: #f5f5f5;
+          font-size: 20px;
+          font-weight: 400;
+          padding-bottom: 20px;
+        }
+      }
     }
   }
-}
 
-.active-nav-item a {
-  border-bottom: 1px solid $navigation-active-link-color;
-  padding-bottom: 3px;
+  .curve-bottom {
+    z-index: 1;
+    margin: -7px 0 0 0;
+    position: relative;
+    width: 100%;
+    height: 1.5em;
+    border-radius: 0 0 500% 500%;
+    overflow: hidden;
+    background: #FF614D;
+  } 
 }
