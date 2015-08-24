@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.2.4"
+ruby "2.1.4"
 
 gem 'rmagick', '2.15.0'
 gem 'httparty', '0.13.5'
