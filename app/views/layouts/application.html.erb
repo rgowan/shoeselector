@@ -11,20 +11,20 @@
 </head>
 <body>
   <% if current_user %>
-    <header>
-      <nav>
-        <ul>
-          <li class="shoes"><a class="link" href="/#products"><%= image_tag("search-icon.png") %></a></li>
-          <li class="user-image"><a class="link" href="/#wishes"><%= image_tag current_user.image %></a></li>
-          <li class="account">
-            <%= link_to destroy_user_session_path, method: :delete do %> 
-              <img src="/assets/log-out-icon.png">
-            <% end %>
-          </li>
-        </ul>
-      </nav>
+  <header>
+    <nav>
+      <ul>
+        <li class="shoes"><a class="link" href="/#products"><%= image_tag("search-icon.png") %></a></li>
+        <li class="user-image"><a class="link" href="/#wishes"><%= image_tag current_user.image %></a></li>
+        <li class="account">
+          <%= link_to destroy_user_session_path, method: :delete do %> 
+          <img src="/assets/log-out-icon.png">
+          <% end %>
+        </li>
+      </ul>
+    </nav>
     <div class="curve-bottom"></div>
-    </header>
+  </header>
   <% end %>
   <%= yield %>
 </body>
