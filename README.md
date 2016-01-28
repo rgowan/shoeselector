@@ -1,3 +1,5 @@
+![image](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
 # GA WDI12 Project 3 - Shoe Selector
 
 In the final project of my Web Development Immersive course, for the first time we were given full autonomy to decide the idea and the tech we wanted to use. I really wanted to identify a problem I had in my life and create a solution to fix this problem.
